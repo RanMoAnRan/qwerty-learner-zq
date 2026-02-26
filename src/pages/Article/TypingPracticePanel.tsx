@@ -138,7 +138,7 @@ export default function TypingPracticePanel({ articleId, paragraphs }: TypingPra
       {!isFinished ? (
         <>
           <div
-            className="relative rounded-xl border border-slate-200 bg-white p-4 text-[22px] leading-10 tracking-[0.06em] text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
+            className="relative rounded-xl border border-slate-200 bg-white p-4 text-[22px] font-bold leading-10 tracking-[0.06em] text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
             onClick={() => inputRef.current?.focus()}
           >
             {targetText.split('').map((char, index) => {
@@ -161,7 +161,7 @@ export default function TypingPracticePanel({ articleId, paragraphs }: TypingPra
               <span className="text-red-600 dark:text-red-300">{inputValue.slice(targetText.length)}</span>
             )}
             <textarea
-              className="absolute inset-0 h-full w-full resize-none border-none bg-transparent p-4 text-[22px] leading-10 tracking-[0.06em] text-transparent caret-indigo-500 outline-none"
+              className="absolute inset-0 h-full w-full resize-none border-none bg-transparent p-4 text-[22px] font-bold leading-10 tracking-[0.06em] text-transparent caret-indigo-500 outline-none"
               onChange={(event) => handleInputChange(event.target.value)}
               placeholder=""
               ref={inputRef}

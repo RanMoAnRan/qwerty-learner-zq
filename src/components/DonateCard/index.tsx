@@ -112,7 +112,7 @@ export const DonateCard = () => {
                   <h1 className="gradient-text w-full pt-3 text-center text-[2.4rem] font-bold">{`${chapterNumber} Chapters Achievement !`}</h1>
                   <div className="flex w-full flex-col gap-4 px-4">
                     <p className="mx-auto px-4 indent-4">
-                      您刚刚完成了<HighlightedText> {chapterNumber} </HighlightedText>章节的练习，QL 已经陪你走过
+                      您刚刚完成了<HighlightedText> {chapterNumber} </HighlightedText>章节的练习，KeyFlow 已经陪你走过
                       <HighlightedText> {dayFromFirstWord} </HighlightedText> 天，一起完成了
                       <HighlightedText> {wordNumber} </HighlightedText>
                       词的练习，帮助您纠正了 <HighlightedText> {sumWrongCount} </HighlightedText>次错误输入，让我们一起为您的进步欢呼
@@ -122,13 +122,13 @@ export const DonateCard = () => {
                       <br />
                     </p>
                     <p className="mx-auto px-4 indent-4">
-                      QL 已经坚持 <span className="font-medium ">开放源码、无广告、无商业化</span> 运营
+                      KeyFlow 已经坚持 <span className="font-medium ">开放源码、无广告、无商业化</span> 运营
                       <HighlightedText className="text-indigo-500"> {dayFromQwerty} </HighlightedText> 天，
-                      我们的目标是为所有学习者提供一个高效、便捷、无干扰的学习环境。我们诚挚地邀请您考虑进行捐赠，捐赠将直接用于维持 Qwerty
-                      的日常运营以及未来发展，让 Qwerty 与您一起成长。
+                      我们的目标是为所有学习者提供一个高效、便捷、无干扰的学习环境。我们诚挚地邀请您考虑进行捐赠，捐赠将直接用于维持 KeyFlow
+                      的日常运营以及未来发展，让 KeyFlow 与您一起成长。
                     </p>
                     <p className="mx-auto px-4 indent-4 ">
-                      为了感谢您的慷慨，单次 50 rmb 及以上的捐赠， 我们将回赠 Qwerty 的定制贴纸 5 枚
+                      为了感谢您的慷慨，单次 50 rmb 及以上的捐赠， 我们将回赠 KeyFlow 的定制贴纸 5 枚
                       <span className="text-xs">（仅限大陆地区）</span>，希望您可以跟朋友分享您的快乐
                     </p>
                     <div className="flex items-center justify-center">

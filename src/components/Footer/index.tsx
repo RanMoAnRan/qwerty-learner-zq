@@ -53,18 +53,18 @@ const Footer: React.FC = () => {
         onClose={() => handleCloseInfoPanel('donate')}
       >
         <p className="indent-4 text-sm text-gray-500 dark:text-gray-300">
-          非常感谢大家使用 QL，目前该网站使用业余时间在维护，为了保证网站能够持续地提供给大家高质量的服务，我们需要您的帮助！
+          非常感谢大家使用 KeyFlow，目前该网站使用业余时间在维护，为了保证网站能够持续地提供给大家高质量的服务，我们需要您的帮助！
           <br />
           您的捐款将有助于我们支付网站的运营成本，改进网站的功能和设计，并提高用户体验。
           <br />
         </p>
         <br />
         <p className="indent-4 text-sm text-gray-700 dark:text-gray-200">
-          我们相信，共同的努力可以让 QL 成为更好的学习平台，也相信您的支持将给予我们持续前进的动力。 感谢您的支持！
+          我们相信，共同的努力可以让 KeyFlow 成为更好的学习平台，也相信您的支持将给予我们持续前进的动力。 感谢您的支持！
         </p>
         <br />
         <p className="indent-4 text-sm text-gray-700 dark:text-gray-200">
-          为了感谢您的慷慨，单次 50 rmb 及以上的捐赠， 我们将回赠 Qwerty 的定制贴纸 5 枚<span className="text-xs">（仅限大陆地区）</span>
+          为了感谢您的慷慨，单次 50 rmb 及以上的捐赠， 我们将回赠 KeyFlow 的定制贴纸 5 枚<span className="text-xs">（仅限大陆地区）</span>
           ，希望您可以跟朋友分享您的快乐
         </p>
         <div className="flex items-center justify-center py-2">
@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
         onClose={() => handleCloseInfoPanel('community')}
       >
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          QL 是一个开源项目，旨在为用户提供高质量、可靠的打字练习工具。
+          KeyFlow 是一个开源项目，旨在为用户提供高质量、可靠的打字练习工具。
           <br />
           加入我们的用户社群后，您可以与我们的开发团队进行沟通，分享您的使用体验和建议，帮助我们改进产品，同时也能够及时了解我们的最新动态和更新内容。
           <br />
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
         </p>
         <p className="text-sm text-gray-700 dark:text-gray-200">
           我们深信，与用户的良好互动和反馈是推动我们不断前进和提高的重要因素。因此，我们诚挚邀请您加入我们的社群，与我们一起打造更好的
-          「QL」！
+          「KeyFlow」！
         </p>
         <br />
         <p className="text-sm text-gray-500  dark:text-gray-400">再次感谢您的支持和关注！</p>
@@ -131,7 +131,7 @@ const Footer: React.FC = () => {
         onClose={() => handleCloseInfoPanel('redBook')}
       >
         <p className="text-sm text-gray-500  dark:text-gray-400">
-          QL 是一个开源项目，旨在为用户提供高质量、可靠的打字练习工具。
+          KeyFlow 是一个开源项目，旨在为用户提供高质量、可靠的打字练习工具。
           <br />
           关注小红书后，您可以获得开发团队的最新动态和更新内容，反馈您的使用体验和建议，帮助我们改进产品。
           <br />
@@ -139,7 +139,7 @@ const Footer: React.FC = () => {
         </p>
         <p className="text-sm text-gray-700 dark:text-gray-200">
           我们深信，与用户的良好互动和反馈是推动我们不断前进和提高的重要因素。因此，我们诚挚邀请您关注我们的小红书账号，与我们一起打造更好的
-          「QL」！
+          「KeyFlow」！
         </p>
         <br />
         <img className="ml-1 w-5/12 " src={redBookCode} alt="redBook" />
@@ -198,7 +198,7 @@ const Footer: React.FC = () => {
             handleOpenInfoPanel('vsc')
             e.currentTarget.blur()
           }}
-          aria-label="使用 Visual Studio Code 插件版 QL"
+          aria-label="使用 Visual Studio Code 插件版 KeyFlow"
         >
           <IconVisualstudiocode fontSize={14} className="text-gray-500 hover:text-sky-500 dark:text-gray-400 dark:hover:text-sky-500" />
         </button>
@@ -230,7 +230,7 @@ const Footer: React.FC = () => {
             e.currentTarget.blur()
           }}
         >
-          @ QL
+          @ KeyFlow
         </button>
 
         <a

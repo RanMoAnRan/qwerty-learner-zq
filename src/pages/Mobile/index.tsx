@@ -70,9 +70,9 @@ const MobilePage: React.FC = () => {
     <div className="flex w-screen flex-col bg-white lg:mx-auto lg:max-w-7xl">
       <header className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between border-b border-gray-100/50 bg-white/80 px-6 py-6 backdrop-blur-xl lg:px-12">
         <div className="flex items-center">
-          <img src={logo} className="mr-4 h-10 w-10 lg:h-12 lg:w-12" alt="QL Logo" />
+          <img src={logo} className="mr-4 h-10 w-10 lg:h-12 lg:w-12" alt="KeyFlow Logo" />
           <div className="flex flex-col">
-            <h1 className="text-lg font-semibold tracking-tight text-indigo-500 lg:text-xl">QL</h1>
+            <h1 className="text-lg font-semibold tracking-tight text-indigo-500 lg:text-xl">KeyFlow</h1>
             <span className="text-xs font-normal text-gray-500">官方网站</span>
           </div>
         </div>
@@ -127,7 +127,7 @@ const MobilePage: React.FC = () => {
             </li>
             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
               <span className="font-medium text-gray-900" itemProp="name">
-                QL 官网
+                KeyFlow 官网
               </span>
               <meta itemProp="position" content="2" />
             </li>
@@ -207,18 +207,18 @@ const MobilePage: React.FC = () => {
               >
                 <img
                   src={hotImg}
-                  alt="QL 英语学习软件热门词库界面 - CET 四六级雅思托福词汇在线练习"
+                  alt="KeyFlow 英语学习软件热门词库界面 - CET 四六级雅思托福词汇在线练习"
                   className="w-full flex-shrink-0"
                 />
                 <img
                   src={directoryImg}
-                  alt="QL 免费英语学习软件词库目录 - 支持程序员技术英语学习"
+                  alt="KeyFlow 免费英语学习软件词库目录 - 支持程序员技术英语学习"
                   className="w-full flex-shrink-0"
                 />
-                <img src={indexImg} alt="QL 英语打字练习软件主界面 - 在线英语单词记忆训练" className="w-full flex-shrink-0" />
+                <img src={indexImg} alt="KeyFlow 英语打字练习软件主界面 - 在线英语单词记忆训练" className="w-full flex-shrink-0" />
                 <img
                   src={hotImg}
-                  alt="QL 英语学习软件热门词库界面 - CET 四六级雅思托福词汇在线练习"
+                  alt="KeyFlow 英语学习软件热门词库界面 - CET 四六级雅思托福词汇在线练习"
                   className="w-full flex-shrink-0"
                 />
               </div>
@@ -238,9 +238,9 @@ const MobilePage: React.FC = () => {
 
         <section className="mt-24 bg-gray-50/30 px-6 py-24 lg:mt-32 lg:px-24" itemScope itemType="https://schema.org/Product">
           <div className="mx-auto max-w-7xl">
-            <meta itemProp="name" content="QL" />
+            <meta itemProp="name" content="KeyFlow" />
             <meta itemProp="description" content="为键盘工作者设计的英语学习软件，结合打字练习与单词记忆" />
-            <meta itemProp="brand" content="QL" />
+            <meta itemProp="brand" content="KeyFlow" />
 
             {/* Offers Schema */}
             <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
@@ -355,7 +355,7 @@ const MobilePage: React.FC = () => {
                 <img
                   className="w-full object-contain"
                   src={detail[activeIndex].img}
-                  alt={`QL ${detail[activeIndex].title} 功能展示 - 英语学习软件特色功能截图`}
+                  alt={`KeyFlow ${detail[activeIndex].title} 功能展示 - 英语学习软件特色功能截图`}
                 />
               </div>
             </div>

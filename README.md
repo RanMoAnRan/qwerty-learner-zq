@@ -1,4 +1,4 @@
-# Qwerty Learner（二开版本）
+# KeyFlow（二开版本）
 
 本仓库是基于 [RealKai42/qwerty-learner](https://github.com/RealKai42/qwerty-learner) 的二次开发版本，目标是在保留原有打字练词核心能力的前提下，完成更产品化的桌面端体验。
 

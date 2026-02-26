@@ -91,18 +91,20 @@ export default function ArticlePage() {
             ))}
           </div>
 
-          {isTypingPracticeOpen && <TypingPracticePanel articleId={currentArticle.id} paragraphs={currentArticle.paragraphs} />}
-
-          <div className="mt-8 space-y-6 text-[18px] leading-9 text-slate-700 dark:text-slate-300">
-            {currentArticle.paragraphs.map((paragraph, index) => (
-              <div key={`${currentArticle.id}-paragraph-${index}`}>
-                <p>{paragraph}</p>
-                {currentArticle.paragraphsZh?.[index] && (
-                  <p className="mt-2 text-base leading-8 text-slate-500 dark:text-slate-400">{currentArticle.paragraphsZh[index]}</p>
-                )}
-              </div>
-            ))}
-          </div>
+          {isTypingPracticeOpen ? (
+            <TypingPracticePanel articleId={currentArticle.id} paragraphs={currentArticle.paragraphs} paragraphsZh={currentArticle.paragraphsZh} />
+          ) : (
+            <div className="mt-8 space-y-6 text-[18px] leading-9 text-slate-700 dark:text-slate-300">
+              {currentArticle.paragraphs.map((paragraph, index) => (
+                <div key={`${currentArticle.id}-paragraph-${index}`}>
+                  <p>{paragraph}</p>
+                  {currentArticle.paragraphsZh?.[index] && (
+                    <p className="mt-2 text-base leading-8 text-slate-500 dark:text-slate-400">{currentArticle.paragraphsZh[index]}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
         </article>
       </div>
     </div>

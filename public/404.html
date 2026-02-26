@@ -22,7 +22,11 @@
       // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
       // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
       // Otherwise, leave pathSegmentsToKeep as 0.
-      var pathSegmentsToKeep = 1
+      // NOTE:
+      // On custom domains (e.g. Cloudflare Pages), this MUST be 0.
+      // Using 1 on custom domains can produce malformed urls like /?/&/~and~/.
+      var isGithubPages = /\.github\.io$/i.test(window.location.hostname)
+      var pathSegmentsToKeep = isGithubPages ? 1 : 0
 
       var l = window.location
       l.replace(

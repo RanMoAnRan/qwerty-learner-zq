@@ -117,17 +117,3 @@ supabase/
   functions/           # Supabase Edge Functions（如需后端接入）
 ```
 
-## 二开建议路线
-
-1. 完成 Auth、订单、会员订阅闭环（Supabase + 支付网关）
-2. 将练习进度、统计、错题记录改为云同步
-3. 增加内容运营能力（词库订阅、专题文章、分享激励）
-
-可参考：`docs/secondary-development.md`
-
-## 致谢与协议
-
-- 上游项目：RealKai42/qwerty-learner
-- 本项目遵循仓库内 `LICENSE` 协议
-
-如果你正在进行二开，建议在 PR 中明确记录：业务目标、变更范围、回滚方案。

@@ -285,12 +285,12 @@ export default function TypingPracticePanel({ articleId, paragraphs, paragraphsZ
           return (
             <div className="space-y-2" key={`${articleId}-practice-${index}`}>
               <div
-                className={`rounded-xl border bg-white p-4 dark:bg-slate-900 ${
+                className={`relative rounded-xl border p-4 transition-all ${
                   isDone
-                    ? 'border-emerald-300 dark:border-emerald-500/40'
+                    ? 'border-emerald-300 bg-emerald-50/50 shadow-sm shadow-emerald-100/60 dark:border-emerald-500/40 dark:bg-emerald-500/10 dark:shadow-none'
                     : isActive
-                    ? 'border-indigo-300 dark:border-indigo-500/40'
-                    : 'border-slate-200 dark:border-slate-700'
+                    ? 'border-indigo-400 bg-indigo-50/70 shadow-md shadow-indigo-200/70 ring-2 ring-indigo-200/80 dark:border-indigo-400/70 dark:bg-indigo-500/15 dark:shadow-none dark:ring-indigo-500/40'
+                    : 'border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900'
                 }`}
                 onClick={() => {
                   if (isActive) {
@@ -298,6 +298,11 @@ export default function TypingPracticePanel({ articleId, paragraphs, paragraphsZ
                   }
                 }}
               >
+                {isActive && (
+                  <span className="pointer-events-none absolute right-3 top-2 rounded-full bg-indigo-500 px-2 py-0.5 text-[11px] font-semibold text-white dark:bg-indigo-400 dark:text-slate-900">
+                    当前段落
+                  </span>
+                )}
                 <div className="relative">
                   <p className={typingTextClassName}>
                     {(() => {

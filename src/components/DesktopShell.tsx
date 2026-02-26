@@ -1,3 +1,7 @@
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { businessSessionAtom } from '@/store/businessAtom'
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
+import { useAtom } from 'jotai'
 import SettingsDialog from '@/components/SettingsDialog'
 import { type ComponentType, useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
@@ -6,8 +10,8 @@ import IconBook from '~icons/tabler/book'
 import IconBooks from '~icons/tabler/books'
 import IconChartBar from '~icons/tabler/chart-bar'
 import IconCircleX from '~icons/tabler/circle-x'
-import IconCrown from '~icons/tabler/crown'
 import IconHome from '~icons/tabler/home'
+import IconLogin2 from '~icons/tabler/login-2'
 import IconSettings from '~icons/tabler/settings'
 
 type NavItem = {
@@ -28,6 +32,8 @@ const navItems: NavItem[] = [
 
 export default function DesktopShell() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false)
+  const [session, setSession] = useAtom(businessSessionAtom)
+  const avatarText = (session?.displayName?.trim()?.[0] || session?.email?.trim()?.[0] || '?').toUpperCase()
 
   return (
     <div className="relative flex h-screen w-full overflow-hidden bg-[radial-gradient(circle_at_10%_0%,#dbeafe_0,#e0e7ff_38%,#f8fafc_75%)] p-3 text-slate-800 transition-colors dark:bg-[radial-gradient(circle_at_10%_0%,#0b1220_0,#111827_45%,#020617_100%)] dark:text-slate-100">
@@ -85,18 +91,61 @@ export default function DesktopShell() {
           </button>
         </nav>
 
-        <NavLink
-          className="mt-3 flex items-center gap-3 rounded-2xl border border-amber-200 bg-amber-50 px-3 py-3 text-amber-800 transition-colors hover:bg-amber-100 dark:border-amber-500/30 dark:bg-amber-500/15 dark:text-amber-100 dark:hover:bg-amber-500/25"
-          to="/go-premium"
-        >
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-amber-100 dark:bg-amber-500/20">
-            <IconCrown className="h-4 w-4" />
-          </span>
-          <span className="flex flex-col">
-            <span className="text-sm font-semibold">会员中心</span>
-            <span className="text-[11px] text-amber-700/85 dark:text-amber-100/80">Go Premium</span>
-          </span>
-        </NavLink>
+        {session ? (
+          <DropdownMenu.Root>
+            <DropdownMenu.Trigger asChild>
+              <button
+                type="button"
+                className="mt-3 flex w-full items-center gap-2 rounded-xl border border-slate-200/80 bg-white/85 px-2.5 py-2 text-left transition-colors hover:border-slate-300 hover:bg-white dark:border-slate-700 dark:bg-slate-900/80 dark:hover:border-slate-600 dark:hover:bg-slate-900"
+              >
+                <Avatar className="h-8 w-8">
+                  <AvatarFallback className="bg-slate-700 text-xs font-semibold text-white dark:bg-slate-200 dark:text-slate-900">
+                    {avatarText}
+                  </AvatarFallback>
+                </Avatar>
+                <div className="min-w-0">
+                  <p className="truncate text-sm font-semibold text-slate-700 dark:text-slate-200">{session.displayName}</p>
+                  <p className="truncate text-[11px] text-slate-500 dark:text-slate-400">{session.email}</p>
+                </div>
+              </button>
+            </DropdownMenu.Trigger>
+            <DropdownMenu.Portal>
+              <DropdownMenu.Content
+                sideOffset={8}
+                align="start"
+                className="z-50 min-w-[156px] rounded-xl border border-slate-200 bg-white p-1.5 shadow-lg dark:border-slate-700 dark:bg-slate-900"
+              >
+                <DropdownMenu.Item asChild>
+                  <NavLink
+                    to="/go-premium"
+                    className="block cursor-pointer rounded-lg px-3 py-2 text-sm font-medium text-slate-700 outline-none transition-colors hover:bg-slate-100 focus:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800 dark:focus:bg-slate-800"
+                  >
+                    会员中心
+                  </NavLink>
+                </DropdownMenu.Item>
+                <DropdownMenu.Item
+                  className="cursor-pointer rounded-lg px-3 py-2 text-sm font-medium text-rose-600 outline-none transition-colors hover:bg-rose-50 focus:bg-rose-50 dark:text-rose-300 dark:hover:bg-rose-500/15 dark:focus:bg-rose-500/15"
+                  onClick={() => setSession(null)}
+                >
+                  退出登录
+                </DropdownMenu.Item>
+              </DropdownMenu.Content>
+            </DropdownMenu.Portal>
+          </DropdownMenu.Root>
+        ) : (
+          <NavLink
+            to="/login"
+            className="mt-3 flex w-full items-center gap-2 rounded-xl border border-slate-200/80 bg-white/85 px-2.5 py-2 text-left transition-colors hover:border-slate-300 hover:bg-white dark:border-slate-700 dark:bg-slate-900/80 dark:hover:border-slate-600 dark:hover:bg-slate-900"
+          >
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300">
+              <IconLogin2 className="h-4 w-4" />
+            </span>
+            <div className="min-w-0">
+              <p className="truncate text-sm font-semibold text-slate-700 dark:text-slate-200">登录账号</p>
+              <p className="truncate text-[11px] text-slate-500 dark:text-slate-400">Sign In</p>
+            </div>
+          </NavLink>
+        )}
       </aside>
 
       <main className="relative z-10 ml-3 min-w-0 flex-1 overflow-hidden rounded-[28px] border border-white/70 bg-white/78 shadow-[0_35px_90px_-55px_rgba(15,23,42,0.85)] backdrop-blur-xl dark:border-slate-700/60 dark:bg-slate-900/65 dark:shadow-[0_35px_90px_-55px_rgba(2,6,23,1)]">

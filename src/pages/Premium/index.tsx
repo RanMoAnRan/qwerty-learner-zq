@@ -28,7 +28,7 @@ export default function PremiumPage() {
   const navigate = useNavigate()
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-3xl flex-col px-4 py-10">
+    <main className="mx-auto flex h-full w-full max-w-3xl flex-col overflow-y-auto px-4 py-8">
       <h1 className="text-3xl font-bold">Go Premium</h1>
       <p className="mt-2 text-sm text-slate-600">This page is the secondary-development scaffold for subscription checkout.</p>
 

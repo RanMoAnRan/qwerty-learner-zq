@@ -63,7 +63,6 @@ function Root() {
           <Routes>
             <Route path="/login" element={<LoginPage />} />
             <Route path="/sign-up" element={<SignUpPage />} />
-            <Route path="/go-premium" element={<PremiumPage />} />
             <Route path="/payment" element={<PaymentPage />} />
             <Route path="/payment/result" element={<PaymentResultPage />} />
             <Route path="/share/:resourceType/:token" element={<ShareLandingPage />} />
@@ -72,6 +71,7 @@ function Root() {
             ) : (
               <Route element={<DesktopShell />}>
                 <Route index element={<TypingPage />} />
+                <Route path="/go-premium" element={<PremiumPage />} />
                 <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/analysis" element={<AnalysisPage />} />
                 <Route path="/settings" element={<SettingsPage />} />

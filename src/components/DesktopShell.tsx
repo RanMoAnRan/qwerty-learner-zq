@@ -52,7 +52,7 @@ export default function DesktopShell() {
 
       <aside className="relative z-10 flex w-[192px] shrink-0 flex-col rounded-[28px] border border-indigo-100 bg-white/82 p-4 text-slate-700 shadow-[0_24px_64px_-44px_rgba(15,23,42,0.6)] backdrop-blur-xl dark:border-slate-700/70 dark:bg-slate-900/70 dark:text-slate-200 dark:shadow-[0_28px_72px_-44px_rgba(2,6,23,0.9)]">
         <div className="flex justify-center py-2">
-          <p className="truncate text-2xl font-black tracking-[0.24em] text-slate-700 dark:text-slate-300">KeyFlow</p>
+          <p className="truncate text-2xl font-black tracking-[0.08em] text-slate-700 dark:text-slate-300">KeyFlow</p>
         </div>
 
         <nav className="mt-5 flex flex-1 flex-col gap-2">

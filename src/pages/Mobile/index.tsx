@@ -676,12 +676,6 @@ const MobilePage: React.FC = () => {
             </div>
 
             <div className="mt-16 text-center">
-              <div className="mb-8">
-                <h4 className="mb-4 text-2xl font-bold text-gray-900">社区共建，持续增长</h4>
-                <p className="mx-auto max-w-2xl text-gray-600">
-                  我们的词库由活跃的开源社区持续贡献和维护，如果您需要特定的词库，欢迎在 GitHub 提出 Issue
-                </p>
-              </div>
               <a
                 href={siteHomeUrl}
                 target="_blank"
@@ -818,29 +812,11 @@ const MobilePage: React.FC = () => {
                 <h4 className="mb-3 text-xl font-semibold text-white">技术英语提升</h4>
                 <p className="text-gray-300">专业技术词汇训练，提升阅读文档和交流能力</p>
               </div>
-              <div className="text-center">
-                <div className="mb-4 inline-flex items-center justify-center rounded-full bg-purple-600/20 p-4">
-                  <svg className="h-8 w-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                    />
-                  </svg>
-                </div>
-                <h4 className="mb-3 text-xl font-semibold text-white">VSCode 插件</h4>
-                <p className="text-gray-300">支持 VSCode 插件版本，随时在开发环境中练习</p>
-              </div>
+            
             </div>
 
             <div className="mt-16 text-center">
-              <div className="mb-8">
-                <h4 className="mb-4 text-2xl font-bold text-white">社区驱动，持续更新</h4>
-                <p className="mx-auto max-w-2xl text-gray-300">
-                  我们的 API 词库主要依赖于社区贡献，更多编程语言的 API 正在逐步添加中，欢迎参与贡献
-                </p>
-              </div>
+            
               <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                 <a
                   href={siteHomeUrl}

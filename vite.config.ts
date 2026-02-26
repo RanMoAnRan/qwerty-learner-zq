@@ -14,7 +14,10 @@ export default defineConfig(async ({ mode }) => {
   const latestCommitHash = await new Promise<string>((resolve) => {
     return getLastCommit((err, commit) => (err ? 'unknown' : resolve(commit.shortHash)))
   })
+  const isPagesDeploy = process.env.REACT_APP_DEPLOY_ENV === 'pages'
+
   return {
+    base: isPagesDeploy ? '/qwerty-learner/' : '/',
     plugins: [
       react({ babel: { plugins: [jotaiDebugLabel, jotaiReactRefresh] } }),
       visualizer() as PluginOption,

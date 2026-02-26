@@ -1,12 +1,16 @@
-import { articleCategoryList, articleLevelList, articles } from '@/resources/articles'
+import { getArticleCategoryList, getArticleLevelList } from '@/resources/articles'
+import { useArticles } from '@/resources/useArticles'
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import IconSearch from '~icons/tabler/search'
 
 export default function ArticleGalleryPage() {
+  const { articles, error, isLoading } = useArticles()
   const [searchText, setSearchText] = useState('')
   const [selectedCategory, setSelectedCategory] = useState<string>('All')
   const [selectedLevel, setSelectedLevel] = useState<string>('All')
+  const articleCategoryList = useMemo(() => getArticleCategoryList(articles), [articles])
+  const articleLevelList = useMemo(() => getArticleLevelList(articles), [articles])
 
   const list = useMemo(() => {
     const keyword = searchText.trim().toLowerCase()
@@ -21,7 +25,7 @@ export default function ArticleGalleryPage() {
       const matchesLevel = selectedLevel === 'All' || item.level === selectedLevel
       return matchesKeyword && matchesCategory && matchesLevel
     })
-  }, [searchText, selectedCategory, selectedLevel])
+  }, [articles, searchText, selectedCategory, selectedLevel])
 
   return (
     <div className="flex h-full w-full flex-col overflow-hidden px-8 pb-6 pt-7">
@@ -67,39 +71,49 @@ export default function ArticleGalleryPage() {
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-        <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
-          {list.map((item) => (
-            <Link
-              className="group rounded-2xl border border-slate-200/90 bg-white/85 p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md dark:border-slate-700/70 dark:bg-slate-900/70 dark:hover:border-indigo-400/50"
-              key={item.id}
-              to={`/article/${item.id}`}
-            >
-              <div className="mb-4 flex items-center gap-2">
-                <span className="rounded-full bg-indigo-50 px-2 py-1 text-[11px] font-semibold text-indigo-700 dark:bg-indigo-500/20 dark:text-indigo-200">
-                  {item.level}
-                </span>
-                <span className="rounded-full bg-slate-100 px-2 py-1 text-[11px] font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300">
-                  {item.category}
-                </span>
-                <span className="ml-auto text-xs text-slate-400 dark:text-slate-500">{item.minutes} min</span>
-              </div>
-
-              <h2 className="text-xl font-bold text-slate-800 transition-colors group-hover:text-indigo-700 dark:text-slate-100 dark:group-hover:text-indigo-200">
-                {item.title}
-              </h2>
-              <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{item.subtitle}</p>
-              <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300">{item.summary}</p>
-
-              <div className="mt-4 flex flex-wrap gap-2">
-                {item.tags.map((tag) => (
-                  <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-500 dark:bg-slate-800 dark:text-slate-400" key={tag}>
-                    #{tag}
+        {error ? (
+          <div className="grid h-72 place-content-center rounded-2xl border border-red-200 bg-red-50/70 text-sm text-red-600 dark:border-red-500/30 dark:bg-red-500/10 dark:text-red-200">
+            文章数据加载失败，请稍后重试
+          </div>
+        ) : isLoading ? (
+          <div className="grid h-72 place-content-center rounded-2xl border border-slate-200/80 bg-white/70 text-sm text-slate-500 dark:border-slate-700/70 dark:bg-slate-900/70 dark:text-slate-400">
+            正在加载文章库...
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
+            {list.map((item) => (
+              <Link
+                className="group rounded-2xl border border-slate-200/90 bg-white/85 p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md dark:border-slate-700/70 dark:bg-slate-900/70 dark:hover:border-indigo-400/50"
+                key={item.id}
+                to={`/article/${item.id}`}
+              >
+                <div className="mb-4 flex items-center gap-2">
+                  <span className="rounded-full bg-indigo-50 px-2 py-1 text-[11px] font-semibold text-indigo-700 dark:bg-indigo-500/20 dark:text-indigo-200">
+                    {item.level}
                   </span>
-                ))}
-              </div>
-            </Link>
-          ))}
-        </div>
+                  <span className="rounded-full bg-slate-100 px-2 py-1 text-[11px] font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300">
+                    {item.category}
+                  </span>
+                  <span className="ml-auto text-xs text-slate-400 dark:text-slate-500">{item.minutes} min</span>
+                </div>
+
+                <h2 className="text-xl font-bold text-slate-800 transition-colors group-hover:text-indigo-700 dark:text-slate-100 dark:group-hover:text-indigo-200">
+                  {item.title}
+                </h2>
+                <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{item.subtitle}</p>
+                <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300">{item.summary}</p>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {item.tags.map((tag) => (
+                    <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-500 dark:bg-slate-800 dark:text-slate-400" key={tag}>
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

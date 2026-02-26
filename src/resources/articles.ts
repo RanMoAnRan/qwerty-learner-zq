@@ -17,130 +17,31 @@ export type Article = {
   paragraphs: string[]
 }
 
-export const articles: Article[] = [
-  {
-    id: 'deep-work-rhythm',
-    title: 'Build a Deep Work Rhythm',
-    subtitle: 'How to create focus blocks that survive a busy schedule',
-    summary:
-      'Most people fail at deep work because they wait for perfect conditions. This article shows a practical rhythm that works even with meetings.',
-    level: 'Intermediate',
-    category: 'Business',
-    minutes: 6,
-    updatedAt: '2026-02-20',
-    tags: ['Focus', 'Productivity', 'Career'],
-    highlights: [
-      'Design your day around energy, not around your inbox.',
-      'Short and repeatable focus rituals beat ambitious plans.',
-      'Measure deep work by finished output, not by time spent.',
-    ],
-    vocabulary: [
-      { word: 'ritual', meaning: '固定步骤；例行流程' },
-      { word: 'friction', meaning: '阻力；摩擦成本' },
-      { word: 'iterate', meaning: '迭代；反复改进' },
-      { word: 'bandwidth', meaning: '精力容量；带宽' },
-    ],
-    paragraphs: [
-      'Deep work is often described as a long and silent stretch of concentration, but in real life that picture rarely exists. Your calendar has meetings, messages, and unexpected tasks. If you treat focus as an ideal state, you will keep postponing it. A better approach is to treat deep work as a rhythm that can survive interruptions.',
-      'Start by identifying your high-energy window. For many people, this is the first two hours after waking up. Protect that window with a simple ritual: no chat apps, one clear objective, and a visible countdown timer. The ritual should be short enough to repeat every day. Consistency creates momentum faster than heroic effort.',
-      'Next, reduce the friction before each session. Keep your working document open, list the first two actions, and remove tabs that are not relevant. These tiny adjustments prevent decision fatigue. They also reduce the temptation to switch context when the task becomes difficult.',
-      'Finally, evaluate deep work by output, not by duration. Ask what you shipped: a draft, a refactor, a decision memo, or a tested feature. This shift changes your mindset. You stop collecting hours and start creating results. Over time, your deep work rhythm becomes a reliable engine for meaningful progress.',
-    ],
-  },
-  {
-    id: 'ai-writing-feedback-loop',
-    title: 'Use AI as a Writing Feedback Loop',
-    subtitle: 'Turn generic suggestions into concrete revisions',
-    summary:
-      'AI tools are powerful for rewriting, but quality depends on your review loop. Learn a method to get cleaner structure and stronger arguments.',
-    level: 'Advanced',
-    category: 'Technology',
-    minutes: 8,
-    updatedAt: '2026-02-18',
-    tags: ['AI', 'Writing', 'Editing'],
-    highlights: [
-      'Treat model output as a draft assistant, not as a final author.',
-      'Prompt for critique before asking for rewrite.',
-      'Run two rounds: structure first, style second.',
-    ],
-    vocabulary: [
-      { word: 'coherence', meaning: '连贯性' },
-      { word: 'nuance', meaning: '细微差别' },
-      { word: 'premise', meaning: '前提' },
-      { word: 'counterargument', meaning: '反方论点' },
-    ],
-    paragraphs: [
-      'Many writers now use AI to generate first drafts, yet the quality gap between average and excellent writing remains wide. The difference is not in prompt length, but in review quality. High-quality writing still requires a deliberate feedback loop.',
-      'Before asking for a rewrite, ask for critique. Request specific feedback on argument structure, missing assumptions, and weak transitions. This step reveals where the draft is logically fragile. A direct rewrite without critique usually improves tone but leaves core problems untouched.',
-      'After critique, run two editing rounds. In round one, optimize structure: reorder sections, sharpen topic sentences, and remove duplicated claims. In round two, optimize style: simplify wording, tighten rhythm, and adjust tone for audience. Separating these rounds keeps your revision focused.',
-      'Most importantly, keep ownership of your voice. Accept suggestions that strengthen clarity, but reject wording that sounds generic or detached from your intent. AI is most effective as a feedback amplifier. The final judgment should still come from the writer.',
-    ],
-  },
-  {
-    id: 'small-habits-language-learning',
-    title: 'Small Habits for Language Growth',
-    subtitle: 'A low-pressure weekly system that compounds',
-    summary:
-      'You do not need long study marathons. Build tiny habits across listening, reading, and speaking to create durable language progress.',
-    level: 'Beginner',
-    category: 'Daily Life',
-    minutes: 5,
-    updatedAt: '2026-02-16',
-    tags: ['Language', 'Habit', 'Routine'],
-    highlights: [
-      'Ten-minute routines are easier to maintain than one-hour plans.',
-      'Use one theme per week to reuse vocabulary.',
-      'Track consistency, not perfection.',
-    ],
-    vocabulary: [
-      { word: 'compound', meaning: '复利增长；积累效应' },
-      { word: 'consistency', meaning: '一致性' },
-      { word: 'recall', meaning: '回忆；提取记忆' },
-      { word: 'streak', meaning: '连续记录' },
-    ],
-    paragraphs: [
-      'Language learning often fails because plans are too heavy. A realistic system is light enough to run on busy days. Try a daily ten-minute cycle: two minutes of listening, four minutes of reading, and four minutes of speaking out loud.',
-      'Pick one weekly theme, such as travel, meetings, or health. Reusing the same context helps words stick. Instead of memorizing isolated vocabulary, you build clusters of meaning that are easier to recall during conversations.',
-      'Keep a tiny log. Write down one sentence each day: what you practiced and one new expression. The log gives visible proof of progress and makes it easier to restart after interruptions.',
-      'The goal is not perfect discipline. The goal is a system you can return to quickly. Small habits compound quietly, and after a few months your listening speed, reading comfort, and speaking confidence all move forward together.',
-    ],
-  },
-  {
-    id: 'city-walks-and-observation',
-    title: 'City Walks as Creative Training',
-    subtitle: 'Observe details to improve descriptive language',
-    summary:
-      'Walking with attention can sharpen both vocabulary and storytelling. This article shares an observation framework you can practice outdoors.',
-    level: 'Intermediate',
-    category: 'Culture',
-    minutes: 7,
-    updatedAt: '2026-02-12',
-    tags: ['Creativity', 'Observation', 'Storytelling'],
-    highlights: [
-      'Observation creates concrete language, not abstract filler.',
-      'Capture contrasts: old/new, loud/quiet, crowded/empty.',
-      'Turn notes into short descriptive paragraphs the same day.',
-    ],
-    vocabulary: [
-      { word: 'texture', meaning: '质感；纹理' },
-      { word: 'contrast', meaning: '对比' },
-      { word: 'ambient', meaning: '环境的；周围的' },
-      { word: 'glimpse', meaning: '一瞥' },
-    ],
-    paragraphs: [
-      'Creative writing improves when your language is rooted in concrete details. A city walk can be a practical training ground. Instead of walking on autopilot, choose one street and observe it with intent.',
-      'Use a three-layer lens: what you see, what you hear, and what changes over time. Note the color of signs, the rhythm of footsteps, and how light shifts between buildings. These details provide texture that makes your writing vivid.',
-      'Focus on contrast. A quiet bookstore next to a loud bus stop. A modern glass tower behind a weathered brick wall. Contrast naturally creates narrative tension and helps readers visualize the scene.',
-      'After the walk, write a short paragraph while memory is fresh. Keep sentences simple, then revise for precision. Over time, this practice expands vocabulary and strengthens your ability to communicate atmosphere.',
-    ],
-  },
-]
+const categoryOrder: ArticleCategory[] = ['Business', 'Technology', 'Culture', 'Daily Life']
+const levelOrder: ArticleLevel[] = ['Beginner', 'Intermediate', 'Advanced']
 
-export const articleCategoryList: ArticleCategory[] = ['Business', 'Technology', 'Culture', 'Daily Life']
+export async function fetchArticles(): Promise<Article[]> {
+  const URL_PREFIX = REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''
+  const response = await fetch(`${URL_PREFIX}/articles/articles.json`)
+  if (!response.ok) {
+    throw new Error(`加载文章库失败: ${response.status}`)
+  }
+  const data = (await response.json()) as Article[]
+  return data
+}
 
-export const articleLevelList: ArticleLevel[] = ['Beginner', 'Intermediate', 'Advanced']
+export function getArticleCategoryList(articles: Article[]): ArticleCategory[] {
+  return categoryOrder.filter((category) => articles.some((article) => article.category === category))
+}
 
-export function findArticleById(id?: string) {
+export function getArticleLevelList(articles: Article[]): ArticleLevel[] {
+  return levelOrder.filter((level) => articles.some((article) => article.level === level))
+}
+
+export function findArticleById(articles: Article[], id?: string): Article | null {
+  if (articles.length === 0) {
+    return null
+  }
   if (!id) {
     return articles[0]
   }

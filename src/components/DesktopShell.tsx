@@ -1,4 +1,3 @@
-import logo from '@/assets/logo.svg'
 import SettingsDialog from '@/components/SettingsDialog'
 import { type ComponentType, useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
@@ -35,12 +34,9 @@ export default function DesktopShell() {
       <div className="pointer-events-none absolute -left-20 top-6 h-72 w-72 rounded-full bg-indigo-400/25 blur-3xl dark:bg-indigo-500/20" />
       <div className="pointer-events-none absolute -bottom-24 right-8 h-80 w-80 rounded-full bg-cyan-300/20 blur-3xl dark:bg-cyan-500/10" />
 
-      <aside className="relative z-10 flex w-[216px] shrink-0 flex-col rounded-[28px] border border-indigo-100 bg-white/82 p-4 text-slate-700 shadow-[0_24px_64px_-44px_rgba(15,23,42,0.6)] backdrop-blur-xl dark:border-slate-700/70 dark:bg-slate-900/70 dark:text-slate-200 dark:shadow-[0_28px_72px_-44px_rgba(2,6,23,0.9)]">
-        <div className="flex items-center gap-3 rounded-2xl border border-white/90 bg-white/80 p-3 dark:border-slate-700/70 dark:bg-slate-900/80">
-          <img alt="QL" className="h-10 w-10 rounded-xl bg-white p-1.5" src={logo} />
-          <div className="min-w-0">
-            <p className="truncate text-sm font-semibold tracking-wide text-slate-800 dark:text-slate-100">QL</p>
-          </div>
+      <aside className="relative z-10 flex w-[192px] shrink-0 flex-col rounded-[28px] border border-indigo-100 bg-white/82 p-4 text-slate-700 shadow-[0_24px_64px_-44px_rgba(15,23,42,0.6)] backdrop-blur-xl dark:border-slate-700/70 dark:bg-slate-900/70 dark:text-slate-200 dark:shadow-[0_28px_72px_-44px_rgba(2,6,23,0.9)]">
+        <div className="flex justify-center py-2">
+          <p className="truncate text-2xl font-black tracking-[0.24em] text-slate-700 dark:text-slate-300">QL</p>
         </div>
 
         <nav className="mt-5 flex flex-1 flex-col gap-2">

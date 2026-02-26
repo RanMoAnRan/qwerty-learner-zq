@@ -3,8 +3,8 @@ import { businessSessionAtom } from '@/store/businessAtom'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import { useAtom } from 'jotai'
 import SettingsDialog from '@/components/SettingsDialog'
-import { type ComponentType, useState } from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { type ComponentType, useMemo, useState } from 'react'
+import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import IconBook2 from '~icons/tabler/book-2'
 import IconBook from '~icons/tabler/book'
 import IconBooks from '~icons/tabler/books'
@@ -31,9 +31,19 @@ const navItems: NavItem[] = [
 ]
 
 export default function DesktopShell() {
+  const LAST_ARTICLE_ID_KEY = 'qwerty-learner:last-article-id'
+  const { pathname } = useLocation()
   const [isSettingsOpen, setIsSettingsOpen] = useState(false)
   const [session, setSession] = useAtom(businessSessionAtom)
   const avatarText = (session?.displayName?.trim()?.[0] || session?.email?.trim()?.[0] || '?').toUpperCase()
+  const articleNavTo = useMemo(() => {
+    const matchedId = pathname.match(/^\/article\/([^/]+)$/)?.[1]
+    if (matchedId) {
+      return `/article/${matchedId}`
+    }
+    const cachedId = window.localStorage.getItem(LAST_ARTICLE_ID_KEY)
+    return cachedId ? `/article/${cachedId}` : '/article'
+  }, [pathname])
 
   return (
     <div className="relative flex h-screen w-full overflow-hidden bg-[radial-gradient(circle_at_10%_0%,#dbeafe_0,#e0e7ff_38%,#f8fafc_75%)] p-3 text-slate-800 transition-colors dark:bg-[radial-gradient(circle_at_10%_0%,#0b1220_0,#111827_45%,#020617_100%)] dark:text-slate-100">
@@ -48,6 +58,7 @@ export default function DesktopShell() {
         <nav className="mt-5 flex flex-1 flex-col gap-2">
           {navItems.map((item) => {
             const Icon = item.icon
+            const to = item.to === '/article' ? articleNavTo : item.to
             return (
               <NavLink
                 className={({ isActive }) =>
@@ -57,9 +68,9 @@ export default function DesktopShell() {
                       : 'border-transparent text-slate-600 hover:border-indigo-100 hover:bg-indigo-50 dark:text-slate-300 dark:hover:border-slate-700 dark:hover:bg-slate-800/80'
                   }`
                 }
-                end={item.to === '/'}
+                end={to === '/'}
                 key={item.to}
-                to={item.to}
+                to={to}
               >
                 <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-600 transition-colors group-hover:bg-indigo-100 group-hover:text-indigo-700 dark:bg-slate-800 dark:text-slate-300 dark:group-hover:bg-indigo-500/30 dark:group-hover:text-indigo-200">
                   <Icon className="h-4 w-4" />

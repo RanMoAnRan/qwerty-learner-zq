@@ -2,113 +2,2800 @@
   {
     "id": "deep-work-rhythm",
     "title": "Build a Deep Work Rhythm",
-    "subtitle": "How to create focus blocks that survive a busy schedule",
-    "summary": "Most people fail at deep work because they wait for perfect conditions. This article shows a practical rhythm that works even with meetings.",
-    "level": "Intermediate",
-    "category": "Business",
-    "minutes": 6,
-    "updatedAt": "2026-02-20",
-    "tags": ["Focus", "Productivity", "Career"],
+    "titleZh": "建立深度工作的节奏",
+    "summary": "This article introduces a lightweight system for build a deep work rhythm, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「建立深度工作的节奏」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "商业",
+    "minutes": 5,
+    "updatedAt": "2026-02-26",
+    "tags": [
+      "职场",
+      "效率",
+      "专注"
+    ],
     "highlights": [
-      "Design your day around energy, not around your inbox.",
-      "Short and repeatable focus rituals beat ambitious plans.",
-      "Measure deep work by finished output, not by time spent."
+      "Define a minimum version of build a deep work rhythm that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「建立深度工作的节奏」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
     ],
     "vocabulary": [
-      { "word": "ritual", "meaning": "固定步骤；例行流程" },
-      { "word": "friction", "meaning": "阻力；摩擦成本" },
-      { "word": "iterate", "meaning": "迭代；反复改进" },
-      { "word": "bandwidth", "meaning": "精力容量；带宽" }
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
     ],
     "paragraphs": [
-      "Deep work is often described as a long and silent stretch of concentration, but in real life that picture rarely exists. Your calendar has meetings, messages, and unexpected tasks. If you treat focus as an ideal state, you will keep postponing it. A better approach is to treat deep work as a rhythm that can survive interruptions.",
-      "Start by identifying your high-energy window. For many people, this is the first two hours after waking up. Protect that window with a simple ritual: no chat apps, one clear objective, and a visible countdown timer. The ritual should be short enough to repeat every day. Consistency creates momentum faster than heroic effort.",
-      "Next, reduce the friction before each session. Keep your working document open, list the first two actions, and remove tabs that are not relevant. These tiny adjustments prevent decision fatigue. They also reduce the temptation to switch context when the task becomes difficult.",
-      "Finally, evaluate deep work by output, not by duration. Ask what you shipped: a draft, a refactor, a decision memo, or a tested feature. This shift changes your mindset. You stop collecting hours and start creating results. Over time, your deep work rhythm becomes a reliable engine for meaningful progress."
+      "Build a Deep Work Rhythm is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around build a deep work rhythm.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns build a deep work rhythm from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, build a deep work rhythm becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「建立深度工作的节奏」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「建立深度工作的节奏」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「建立深度工作的节奏」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「建立深度工作的节奏」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "inbox-zero-lite",
+    "title": "Inbox Zero Lite for Busy Teams",
+    "titleZh": "忙碌团队的轻量收件箱清理法",
+    "summary": "This article introduces a lightweight system for inbox zero lite for busy teams, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「忙碌团队的轻量收件箱清理法」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "商业",
+    "minutes": 6,
+    "updatedAt": "2026-02-25",
+    "tags": [
+      "职场",
+      "效率",
+      "邮件"
+    ],
+    "highlights": [
+      "Define a minimum version of inbox zero lite for busy teams that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「忙碌团队的轻量收件箱清理法」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
+    ],
+    "paragraphs": [
+      "Inbox Zero Lite for Busy Teams is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around inbox zero lite for busy teams.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns inbox zero lite for busy teams from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, inbox zero lite for busy teams becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「忙碌团队的轻量收件箱清理法」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「忙碌团队的轻量收件箱清理法」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「忙碌团队的轻量收件箱清理法」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「忙碌团队的轻量收件箱清理法」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "effective-meeting-notes",
+    "title": "Write Effective Meeting Notes",
+    "titleZh": "写出高质量会议纪要",
+    "summary": "This article introduces a lightweight system for write effective meeting notes, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「写出高质量会议纪要」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "商业",
+    "minutes": 7,
+    "updatedAt": "2026-02-24",
+    "tags": [
+      "职场",
+      "效率",
+      "会议"
+    ],
+    "highlights": [
+      "Define a minimum version of write effective meeting notes that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「写出高质量会议纪要」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
+    ],
+    "paragraphs": [
+      "Write Effective Meeting Notes is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around write effective meeting notes.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns write effective meeting notes from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, write effective meeting notes becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「写出高质量会议纪要」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「写出高质量会议纪要」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「写出高质量会议纪要」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「写出高质量会议纪要」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "weekly-priority-planning",
+    "title": "Weekly Priority Planning",
+    "titleZh": "每周重点任务规划",
+    "summary": "This article introduces a lightweight system for weekly priority planning, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「每周重点任务规划」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "商业",
+    "minutes": 8,
+    "updatedAt": "2026-02-23",
+    "tags": [
+      "职场",
+      "效率",
+      "计划"
+    ],
+    "highlights": [
+      "Define a minimum version of weekly priority planning that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「每周重点任务规划」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
+    ],
+    "paragraphs": [
+      "Weekly Priority Planning is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around weekly priority planning.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns weekly priority planning from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, weekly priority planning becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「每周重点任务规划」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「每周重点任务规划」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「每周重点任务规划」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「每周重点任务规划」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "presentation-story-arc",
+    "title": "Presentation Story Arc",
+    "titleZh": "演示汇报的故事弧线",
+    "summary": "This article introduces a lightweight system for presentation story arc, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「演示汇报的故事弧线」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "商业",
+    "minutes": 9,
+    "updatedAt": "2026-02-22",
+    "tags": [
+      "职场",
+      "效率",
+      "演讲"
+    ],
+    "highlights": [
+      "Define a minimum version of presentation story arc that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「演示汇报的故事弧线」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
+    ],
+    "paragraphs": [
+      "Presentation Story Arc is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around presentation story arc.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns presentation story arc from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, presentation story arc becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「演示汇报的故事弧线」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「演示汇报的故事弧线」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「演示汇报的故事弧线」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「演示汇报的故事弧线」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "negotiation-basics",
+    "title": "Negotiation Basics at Work",
+    "titleZh": "职场谈判基础",
+    "summary": "This article introduces a lightweight system for negotiation basics at work, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「职场谈判基础」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "商业",
+    "minutes": 5,
+    "updatedAt": "2026-02-21",
+    "tags": [
+      "职场",
+      "效率",
+      "沟通"
+    ],
+    "highlights": [
+      "Define a minimum version of negotiation basics at work that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「职场谈判基础」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
+    ],
+    "paragraphs": [
+      "Negotiation Basics at Work is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around negotiation basics at work.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns negotiation basics at work from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, negotiation basics at work becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「职场谈判基础」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「职场谈判基础」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「职场谈判基础」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「职场谈判基础」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "customer-feedback-loop",
+    "title": "Build a Customer Feedback Loop",
+    "titleZh": "搭建用户反馈闭环",
+    "summary": "This article introduces a lightweight system for build a customer feedback loop, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「搭建用户反馈闭环」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "商业",
+    "minutes": 6,
+    "updatedAt": "2026-02-20",
+    "tags": [
+      "职场",
+      "效率",
+      "用户研究"
+    ],
+    "highlights": [
+      "Define a minimum version of build a customer feedback loop that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「搭建用户反馈闭环」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
+    ],
+    "paragraphs": [
+      "Build a Customer Feedback Loop is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around build a customer feedback loop.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns build a customer feedback loop from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, build a customer feedback loop becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「搭建用户反馈闭环」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「搭建用户反馈闭环」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「搭建用户反馈闭环」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「搭建用户反馈闭环」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "remote-team-communication",
+    "title": "Remote Team Communication Habits",
+    "titleZh": "远程团队沟通习惯",
+    "summary": "This article introduces a lightweight system for remote team communication habits, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「远程团队沟通习惯」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "商业",
+    "minutes": 7,
+    "updatedAt": "2026-02-19",
+    "tags": [
+      "职场",
+      "效率",
+      "团队协作"
+    ],
+    "highlights": [
+      "Define a minimum version of remote team communication habits that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「远程团队沟通习惯」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
+    ],
+    "paragraphs": [
+      "Remote Team Communication Habits is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around remote team communication habits.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns remote team communication habits from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, remote team communication habits becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「远程团队沟通习惯」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「远程团队沟通习惯」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「远程团队沟通习惯」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「远程团队沟通习惯」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "stakeholder-update-template",
+    "title": "Stakeholder Update Template",
+    "titleZh": "利益相关者进度同步模板",
+    "summary": "This article introduces a lightweight system for stakeholder update template, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「利益相关者进度同步模板」，并在低压力下持续改进。",
+    "level": "高级",
+    "category": "商业",
+    "minutes": 8,
+    "updatedAt": "2026-02-18",
+    "tags": [
+      "职场",
+      "效率",
+      "项目管理"
+    ],
+    "highlights": [
+      "Define a minimum version of stakeholder update template that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「利益相关者进度同步模板」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
+    ],
+    "paragraphs": [
+      "Stakeholder Update Template is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around stakeholder update template.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns stakeholder update template from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, stakeholder update template becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「利益相关者进度同步模板」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「利益相关者进度同步模板」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「利益相关者进度同步模板」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「利益相关者进度同步模板」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "career-growth-map",
+    "title": "Build Your Career Growth Map",
+    "titleZh": "制定职业成长地图",
+    "summary": "This article introduces a lightweight system for build your career growth map, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「制定职业成长地图」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "商业",
+    "minutes": 9,
+    "updatedAt": "2026-02-17",
+    "tags": [
+      "职场",
+      "效率",
+      "职业发展"
+    ],
+    "highlights": [
+      "Define a minimum version of build your career growth map that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「制定职业成长地图」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
+    ],
+    "paragraphs": [
+      "Build Your Career Growth Map is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around build your career growth map.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns build your career growth map from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, build your career growth map becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「制定职业成长地图」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「制定职业成长地图」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「制定职业成长地图」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「制定职业成长地图」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "decision-making-under-pressure",
+    "title": "Decision Making Under Pressure",
+    "titleZh": "高压场景下的决策方法",
+    "summary": "This article introduces a lightweight system for decision making under pressure, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「高压场景下的决策方法」，并在低压力下持续改进。",
+    "level": "高级",
+    "category": "商业",
+    "minutes": 5,
+    "updatedAt": "2026-02-16",
+    "tags": [
+      "职场",
+      "效率",
+      "决策"
+    ],
+    "highlights": [
+      "Define a minimum version of decision making under pressure that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「高压场景下的决策方法」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
+    ],
+    "paragraphs": [
+      "Decision Making Under Pressure is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around decision making under pressure.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns decision making under pressure from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, decision making under pressure becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「高压场景下的决策方法」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「高压场景下的决策方法」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「高压场景下的决策方法」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「高压场景下的决策方法」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "conflict-resolution-at-work",
+    "title": "Conflict Resolution at Work",
+    "titleZh": "职场冲突解决方法",
+    "summary": "This article introduces a lightweight system for conflict resolution at work, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「职场冲突解决方法」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "商业",
+    "minutes": 6,
+    "updatedAt": "2026-02-15",
+    "tags": [
+      "职场",
+      "效率",
+      "冲突管理"
+    ],
+    "highlights": [
+      "Define a minimum version of conflict resolution at work that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「职场冲突解决方法」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
+    ],
+    "paragraphs": [
+      "Conflict Resolution at Work is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around conflict resolution at work.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns conflict resolution at work from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, conflict resolution at work becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「职场冲突解决方法」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「职场冲突解决方法」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「职场冲突解决方法」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「职场冲突解决方法」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "side-project-validation",
+    "title": "Validate a Side Project Quickly",
+    "titleZh": "快速验证副业项目",
+    "summary": "This article introduces a lightweight system for validate a side project quickly, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「快速验证副业项目」，并在低压力下持续改进。",
+    "level": "高级",
+    "category": "商业",
+    "minutes": 7,
+    "updatedAt": "2026-02-14",
+    "tags": [
+      "职场",
+      "效率",
+      "创业"
+    ],
+    "highlights": [
+      "Define a minimum version of validate a side project quickly that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「快速验证副业项目」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "agenda",
+        "meaning": "议程；讨论清单"
+      },
+      {
+        "word": "alignment",
+        "meaning": "对齐；共识一致"
+      },
+      {
+        "word": "deliverable",
+        "meaning": "可交付成果"
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者"
+      }
+    ],
+    "paragraphs": [
+      "Validate a Side Project Quickly is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around validate a side project quickly.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns validate a side project quickly from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, validate a side project quickly becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「快速验证副业项目」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「快速验证副业项目」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「快速验证副业项目」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「快速验证副业项目」会越来越稳定，因为你的系统能够承受忙碌和中断。"
     ]
   },
   {
     "id": "ai-writing-feedback-loop",
     "title": "Use AI as a Writing Feedback Loop",
-    "subtitle": "Turn generic suggestions into concrete revisions",
-    "summary": "AI tools are powerful for rewriting, but quality depends on your review loop. Learn a method to get cleaner structure and stronger arguments.",
-    "level": "Advanced",
-    "category": "Technology",
+    "titleZh": "把 AI 用作写作反馈闭环",
+    "summary": "This article introduces a lightweight system for use ai as a writing feedback loop, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「把 AI 用作写作反馈闭环」，并在低压力下持续改进。",
+    "level": "高级",
+    "category": "技术",
     "minutes": 8,
-    "updatedAt": "2026-02-18",
-    "tags": ["AI", "Writing", "Editing"],
+    "updatedAt": "2026-02-13",
+    "tags": [
+      "技术",
+      "成长",
+      "AI"
+    ],
     "highlights": [
-      "Treat model output as a draft assistant, not as a final author.",
-      "Prompt for critique before asking for rewrite.",
-      "Run two rounds: structure first, style second."
+      "Define a minimum version of use ai as a writing feedback loop that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「把 AI 用作写作反馈闭环」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
     ],
     "vocabulary": [
-      { "word": "coherence", "meaning": "连贯性" },
-      { "word": "nuance", "meaning": "细微差别" },
-      { "word": "premise", "meaning": "前提" },
-      { "word": "counterargument", "meaning": "反方论点" }
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
     ],
     "paragraphs": [
-      "Many writers now use AI to generate first drafts, yet the quality gap between average and excellent writing remains wide. The difference is not in prompt length, but in review quality. High-quality writing still requires a deliberate feedback loop.",
-      "Before asking for a rewrite, ask for critique. Request specific feedback on argument structure, missing assumptions, and weak transitions. This step reveals where the draft is logically fragile. A direct rewrite without critique usually improves tone but leaves core problems untouched.",
-      "After critique, run two editing rounds. In round one, optimize structure: reorder sections, sharpen topic sentences, and remove duplicated claims. In round two, optimize style: simplify wording, tighten rhythm, and adjust tone for audience. Separating these rounds keeps your revision focused.",
-      "Most importantly, keep ownership of your voice. Accept suggestions that strengthen clarity, but reject wording that sounds generic or detached from your intent. AI is most effective as a feedback amplifier. The final judgment should still come from the writer."
+      "Use AI as a Writing Feedback Loop is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around use ai as a writing feedback loop.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns use ai as a writing feedback loop from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, use ai as a writing feedback loop becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「把 AI 用作写作反馈闭环」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「把 AI 用作写作反馈闭环」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「把 AI 用作写作反馈闭环」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「把 AI 用作写作反馈闭环」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "prompt-design-basics",
+    "title": "Prompt Design Basics",
+    "titleZh": "提示词设计基础",
+    "summary": "This article introduces a lightweight system for prompt design basics, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「提示词设计基础」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "技术",
+    "minutes": 9,
+    "updatedAt": "2026-02-12",
+    "tags": [
+      "技术",
+      "成长",
+      "AI"
+    ],
+    "highlights": [
+      "Define a minimum version of prompt design basics that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「提示词设计基础」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "Prompt Design Basics is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around prompt design basics.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns prompt design basics from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, prompt design basics becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「提示词设计基础」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「提示词设计基础」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「提示词设计基础」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「提示词设计基础」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "clean-code-habits",
+    "title": "Clean Code Habits",
+    "titleZh": "整洁代码习惯",
+    "summary": "This article introduces a lightweight system for clean code habits, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「整洁代码习惯」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "技术",
+    "minutes": 5,
+    "updatedAt": "2026-02-11",
+    "tags": [
+      "技术",
+      "成长",
+      "编程"
+    ],
+    "highlights": [
+      "Define a minimum version of clean code habits that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「整洁代码习惯」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "Clean Code Habits is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around clean code habits.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns clean code habits from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, clean code habits becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「整洁代码习惯」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「整洁代码习惯」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「整洁代码习惯」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「整洁代码习惯」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "api-debugging-checklist",
+    "title": "API Debugging Checklist",
+    "titleZh": "API 调试检查清单",
+    "summary": "This article introduces a lightweight system for api debugging checklist, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「API 调试检查清单」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "技术",
+    "minutes": 6,
+    "updatedAt": "2026-02-10",
+    "tags": [
+      "技术",
+      "成长",
+      "调试"
+    ],
+    "highlights": [
+      "Define a minimum version of api debugging checklist that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「API 调试检查清单」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "API Debugging Checklist is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around api debugging checklist.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns api debugging checklist from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, api debugging checklist becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「API 调试检查清单」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「API 调试检查清单」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「API 调试检查清单」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「API 调试检查清单」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "git-branch-workflow",
+    "title": "Git Branch Workflow",
+    "titleZh": "Git 分支协作流程",
+    "summary": "This article introduces a lightweight system for git branch workflow, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「Git 分支协作流程」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "技术",
+    "minutes": 7,
+    "updatedAt": "2026-02-09",
+    "tags": [
+      "技术",
+      "成长",
+      "Git"
+    ],
+    "highlights": [
+      "Define a minimum version of git branch workflow that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「Git 分支协作流程」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "Git Branch Workflow is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around git branch workflow.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns git branch workflow from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, git branch workflow becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「Git 分支协作流程」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「Git 分支协作流程」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「Git 分支协作流程」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「Git 分支协作流程」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "frontend-performance-quick-wins",
+    "title": "Frontend Performance Quick Wins",
+    "titleZh": "前端性能快速优化点",
+    "summary": "This article introduces a lightweight system for frontend performance quick wins, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「前端性能快速优化点」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "技术",
+    "minutes": 8,
+    "updatedAt": "2026-02-08",
+    "tags": [
+      "技术",
+      "成长",
+      "前端"
+    ],
+    "highlights": [
+      "Define a minimum version of frontend performance quick wins that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「前端性能快速优化点」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "Frontend Performance Quick Wins is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around frontend performance quick wins.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns frontend performance quick wins from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, frontend performance quick wins becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「前端性能快速优化点」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「前端性能快速优化点」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「前端性能快速优化点」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「前端性能快速优化点」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "sql-query-thinking",
+    "title": "SQL Query Thinking",
+    "titleZh": "SQL 查询思维",
+    "summary": "This article introduces a lightweight system for sql query thinking, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「SQL 查询思维」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "技术",
+    "minutes": 9,
+    "updatedAt": "2026-02-07",
+    "tags": [
+      "技术",
+      "成长",
+      "数据库"
+    ],
+    "highlights": [
+      "Define a minimum version of sql query thinking that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「SQL 查询思维」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "SQL Query Thinking is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around sql query thinking.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns sql query thinking from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, sql query thinking becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「SQL 查询思维」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「SQL 查询思维」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「SQL 查询思维」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「SQL 查询思维」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "cloud-cost-awareness",
+    "title": "Cloud Cost Awareness",
+    "titleZh": "云成本控制意识",
+    "summary": "This article introduces a lightweight system for cloud cost awareness, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「云成本控制意识」，并在低压力下持续改进。",
+    "level": "高级",
+    "category": "技术",
+    "minutes": 5,
+    "updatedAt": "2026-02-26",
+    "tags": [
+      "技术",
+      "成长",
+      "云计算"
+    ],
+    "highlights": [
+      "Define a minimum version of cloud cost awareness that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「云成本控制意识」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "Cloud Cost Awareness is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around cloud cost awareness.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns cloud cost awareness from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, cloud cost awareness becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「云成本控制意识」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「云成本控制意识」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「云成本控制意识」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「云成本控制意识」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "cyber-security-hygiene",
+    "title": "Cyber Security Hygiene",
+    "titleZh": "网络安全基础习惯",
+    "summary": "This article introduces a lightweight system for cyber security hygiene, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「网络安全基础习惯」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "技术",
+    "minutes": 6,
+    "updatedAt": "2026-02-25",
+    "tags": [
+      "技术",
+      "成长",
+      "安全"
+    ],
+    "highlights": [
+      "Define a minimum version of cyber security hygiene that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「网络安全基础习惯」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "Cyber Security Hygiene is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around cyber security hygiene.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns cyber security hygiene from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, cyber security hygiene becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「网络安全基础习惯」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「网络安全基础习惯」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「网络安全基础习惯」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「网络安全基础习惯」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "automation-with-scripts",
+    "title": "Automation with Scripts",
+    "titleZh": "用脚本做自动化",
+    "summary": "This article introduces a lightweight system for automation with scripts, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「用脚本做自动化」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "技术",
+    "minutes": 7,
+    "updatedAt": "2026-02-24",
+    "tags": [
+      "技术",
+      "成长",
+      "自动化"
+    ],
+    "highlights": [
+      "Define a minimum version of automation with scripts that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「用脚本做自动化」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "Automation with Scripts is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around automation with scripts.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns automation with scripts from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, automation with scripts becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「用脚本做自动化」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「用脚本做自动化」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「用脚本做自动化」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「用脚本做自动化」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "testing-pyramid-practice",
+    "title": "Testing Pyramid in Practice",
+    "titleZh": "测试金字塔落地实践",
+    "summary": "This article introduces a lightweight system for testing pyramid in practice, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「测试金字塔落地实践」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "技术",
+    "minutes": 8,
+    "updatedAt": "2026-02-23",
+    "tags": [
+      "技术",
+      "成长",
+      "测试"
+    ],
+    "highlights": [
+      "Define a minimum version of testing pyramid in practice that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「测试金字塔落地实践」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "Testing Pyramid in Practice is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around testing pyramid in practice.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns testing pyramid in practice from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, testing pyramid in practice becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「测试金字塔落地实践」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「测试金字塔落地实践」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「测试金字塔落地实践」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「测试金字塔落地实践」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "code-review-conversations",
+    "title": "Code Review Conversations",
+    "titleZh": "高质量代码评审对话",
+    "summary": "This article introduces a lightweight system for code review conversations, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「高质量代码评审对话」，并在低压力下持续改进。",
+    "level": "高级",
+    "category": "技术",
+    "minutes": 9,
+    "updatedAt": "2026-02-22",
+    "tags": [
+      "技术",
+      "成长",
+      "代码评审"
+    ],
+    "highlights": [
+      "Define a minimum version of code review conversations that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「高质量代码评审对话」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "Code Review Conversations is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around code review conversations.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns code review conversations from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, code review conversations becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「高质量代码评审对话」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「高质量代码评审对话」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「高质量代码评审对话」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「高质量代码评审对话」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "incident-postmortem-playbook",
+    "title": "Incident Postmortem Playbook",
+    "titleZh": "故障复盘操作手册",
+    "summary": "This article introduces a lightweight system for incident postmortem playbook, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「故障复盘操作手册」，并在低压力下持续改进。",
+    "level": "高级",
+    "category": "技术",
+    "minutes": 5,
+    "updatedAt": "2026-02-21",
+    "tags": [
+      "技术",
+      "成长",
+      "稳定性"
+    ],
+    "highlights": [
+      "Define a minimum version of incident postmortem playbook that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「故障复盘操作手册」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "Incident Postmortem Playbook is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around incident postmortem playbook.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns incident postmortem playbook from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, incident postmortem playbook becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「故障复盘操作手册」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「故障复盘操作手册」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「故障复盘操作手册」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「故障复盘操作手册」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "linux-command-routine",
+    "title": "Linux Command Routine",
+    "titleZh": "Linux 命令日常套路",
+    "summary": "This article introduces a lightweight system for linux command routine, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「Linux 命令日常套路」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "技术",
+    "minutes": 6,
+    "updatedAt": "2026-02-20",
+    "tags": [
+      "技术",
+      "成长",
+      "Linux"
+    ],
+    "highlights": [
+      "Define a minimum version of linux command routine that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「Linux 命令日常套路」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "latency",
+        "meaning": "延迟"
+      },
+      {
+        "word": "refactor",
+        "meaning": "重构"
+      },
+      {
+        "word": "automate",
+        "meaning": "自动化"
+      },
+      {
+        "word": "incident",
+        "meaning": "线上故障事件"
+      }
+    ],
+    "paragraphs": [
+      "Linux Command Routine is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around linux command routine.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns linux command routine from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, linux command routine becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「Linux 命令日常套路」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「Linux 命令日常套路」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「Linux 命令日常套路」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「Linux 命令日常套路」会越来越稳定，因为你的系统能够承受忙碌和中断。"
     ]
   },
   {
     "id": "small-habits-language-learning",
     "title": "Small Habits for Language Growth",
-    "subtitle": "A low-pressure weekly system that compounds",
-    "summary": "You do not need long study marathons. Build tiny habits across listening, reading, and speaking to create durable language progress.",
-    "level": "Beginner",
-    "category": "Daily Life",
-    "minutes": 5,
-    "updatedAt": "2026-02-16",
-    "tags": ["Language", "Habit", "Routine"],
+    "titleZh": "促进语言成长的小习惯",
+    "summary": "This article introduces a lightweight system for small habits for language growth, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「促进语言成长的小习惯」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "日常生活",
+    "minutes": 7,
+    "updatedAt": "2026-02-19",
+    "tags": [
+      "生活",
+      "习惯",
+      "英语"
+    ],
     "highlights": [
-      "Ten-minute routines are easier to maintain than one-hour plans.",
-      "Use one theme per week to reuse vocabulary.",
-      "Track consistency, not perfection."
+      "Define a minimum version of small habits for language growth that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「促进语言成长的小习惯」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
     ],
     "vocabulary": [
-      { "word": "compound", "meaning": "复利增长；积累效应" },
-      { "word": "consistency", "meaning": "一致性" },
-      { "word": "recall", "meaning": "回忆；提取记忆" },
-      { "word": "streak", "meaning": "连续记录" }
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
     ],
     "paragraphs": [
-      "Language learning often fails because plans are too heavy. A realistic system is light enough to run on busy days. Try a daily ten-minute cycle: two minutes of listening, four minutes of reading, and four minutes of speaking out loud.",
-      "Pick one weekly theme, such as travel, meetings, or health. Reusing the same context helps words stick. Instead of memorizing isolated vocabulary, you build clusters of meaning that are easier to recall during conversations.",
-      "Keep a tiny log. Write down one sentence each day: what you practiced and one new expression. The log gives visible proof of progress and makes it easier to restart after interruptions.",
-      "The goal is not perfect discipline. The goal is a system you can return to quickly. Small habits compound quietly, and after a few months your listening speed, reading comfort, and speaking confidence all move forward together."
+      "Small Habits for Language Growth is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around small habits for language growth.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns small habits for language growth from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, small habits for language growth becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「促进语言成长的小习惯」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「促进语言成长的小习惯」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「促进语言成长的小习惯」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「促进语言成长的小习惯」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "active-listening-practice",
+    "title": "Active Listening Practice",
+    "titleZh": "主动倾听练习",
+    "summary": "This article introduces a lightweight system for active listening practice, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「主动倾听练习」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "日常生活",
+    "minutes": 8,
+    "updatedAt": "2026-02-18",
+    "tags": [
+      "生活",
+      "习惯",
+      "沟通"
+    ],
+    "highlights": [
+      "Define a minimum version of active listening practice that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「主动倾听练习」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
+    ],
+    "paragraphs": [
+      "Active Listening Practice is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around active listening practice.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns active listening practice from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, active listening practice becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「主动倾听练习」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「主动倾听练习」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「主动倾听练习」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「主动倾听练习」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "sleep-routine-reset",
+    "title": "Reset Your Sleep Routine",
+    "titleZh": "重置你的睡眠作息",
+    "summary": "This article introduces a lightweight system for reset your sleep routine, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「重置你的睡眠作息」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "日常生活",
+    "minutes": 9,
+    "updatedAt": "2026-02-17",
+    "tags": [
+      "生活",
+      "习惯",
+      "健康"
+    ],
+    "highlights": [
+      "Define a minimum version of reset your sleep routine that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「重置你的睡眠作息」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
+    ],
+    "paragraphs": [
+      "Reset Your Sleep Routine is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around reset your sleep routine.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns reset your sleep routine from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, reset your sleep routine becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「重置你的睡眠作息」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「重置你的睡眠作息」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「重置你的睡眠作息」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「重置你的睡眠作息」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "home-workout-consistency",
+    "title": "Home Workout Consistency",
+    "titleZh": "居家锻炼持续性",
+    "summary": "This article introduces a lightweight system for home workout consistency, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「居家锻炼持续性」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "日常生活",
+    "minutes": 5,
+    "updatedAt": "2026-02-16",
+    "tags": [
+      "生活",
+      "习惯",
+      "运动"
+    ],
+    "highlights": [
+      "Define a minimum version of home workout consistency that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「居家锻炼持续性」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
+    ],
+    "paragraphs": [
+      "Home Workout Consistency is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around home workout consistency.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns home workout consistency from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, home workout consistency becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「居家锻炼持续性」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「居家锻炼持续性」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「居家锻炼持续性」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「居家锻炼持续性」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "healthy-meal-prep",
+    "title": "Healthy Meal Prep for Weekdays",
+    "titleZh": "工作日健康备餐",
+    "summary": "This article introduces a lightweight system for healthy meal prep for weekdays, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「工作日健康备餐」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "日常生活",
+    "minutes": 6,
+    "updatedAt": "2026-02-15",
+    "tags": [
+      "生活",
+      "习惯",
+      "饮食"
+    ],
+    "highlights": [
+      "Define a minimum version of healthy meal prep for weekdays that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「工作日健康备餐」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
+    ],
+    "paragraphs": [
+      "Healthy Meal Prep for Weekdays is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around healthy meal prep for weekdays.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns healthy meal prep for weekdays from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, healthy meal prep for weekdays becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「工作日健康备餐」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「工作日健康备餐」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「工作日健康备餐」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「工作日健康备餐」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "stress-management-microbreaks",
+    "title": "Stress Management with Microbreaks",
+    "titleZh": "用微休息做压力管理",
+    "summary": "This article introduces a lightweight system for stress management with microbreaks, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「用微休息做压力管理」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "日常生活",
+    "minutes": 7,
+    "updatedAt": "2026-02-14",
+    "tags": [
+      "生活",
+      "习惯",
+      "减压"
+    ],
+    "highlights": [
+      "Define a minimum version of stress management with microbreaks that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「用微休息做压力管理」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
+    ],
+    "paragraphs": [
+      "Stress Management with Microbreaks is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around stress management with microbreaks.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns stress management with microbreaks from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, stress management with microbreaks becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「用微休息做压力管理」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「用微休息做压力管理」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「用微休息做压力管理」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「用微休息做压力管理」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "weekly-reflection-ritual",
+    "title": "Weekly Reflection Ritual",
+    "titleZh": "每周复盘仪式",
+    "summary": "This article introduces a lightweight system for weekly reflection ritual, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「每周复盘仪式」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "日常生活",
+    "minutes": 8,
+    "updatedAt": "2026-02-13",
+    "tags": [
+      "生活",
+      "习惯",
+      "复盘"
+    ],
+    "highlights": [
+      "Define a minimum version of weekly reflection ritual that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「每周复盘仪式」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
+    ],
+    "paragraphs": [
+      "Weekly Reflection Ritual is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around weekly reflection ritual.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns weekly reflection ritual from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, weekly reflection ritual becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「每周复盘仪式」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「每周复盘仪式」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「每周复盘仪式」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「每周复盘仪式」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "digital-declutter-day",
+    "title": "Digital Declutter Day",
+    "titleZh": "数字空间整理日",
+    "summary": "This article introduces a lightweight system for digital declutter day, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「数字空间整理日」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "日常生活",
+    "minutes": 9,
+    "updatedAt": "2026-02-12",
+    "tags": [
+      "生活",
+      "习惯",
+      "整理"
+    ],
+    "highlights": [
+      "Define a minimum version of digital declutter day that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「数字空间整理日」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
+    ],
+    "paragraphs": [
+      "Digital Declutter Day is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around digital declutter day.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns digital declutter day from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, digital declutter day becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「数字空间整理日」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「数字空间整理日」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「数字空间整理日」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「数字空间整理日」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "morning-routine-that-lasts",
+    "title": "A Morning Routine That Lasts",
+    "titleZh": "可长期坚持的晨间流程",
+    "summary": "This article introduces a lightweight system for a morning routine that lasts, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「可长期坚持的晨间流程」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "日常生活",
+    "minutes": 5,
+    "updatedAt": "2026-02-11",
+    "tags": [
+      "生活",
+      "习惯",
+      "晨间习惯"
+    ],
+    "highlights": [
+      "Define a minimum version of a morning routine that lasts that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「可长期坚持的晨间流程」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
+    ],
+    "paragraphs": [
+      "A Morning Routine That Lasts is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around a morning routine that lasts.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns a morning routine that lasts from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, a morning routine that lasts becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「可长期坚持的晨间流程」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「可长期坚持的晨间流程」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「可长期坚持的晨间流程」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「可长期坚持的晨间流程」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "personal-budget-basics",
+    "title": "Personal Budget Basics",
+    "titleZh": "个人预算基础",
+    "summary": "This article introduces a lightweight system for personal budget basics, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「个人预算基础」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "日常生活",
+    "minutes": 6,
+    "updatedAt": "2026-02-10",
+    "tags": [
+      "生活",
+      "习惯",
+      "理财"
+    ],
+    "highlights": [
+      "Define a minimum version of personal budget basics that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「个人预算基础」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
+    ],
+    "paragraphs": [
+      "Personal Budget Basics is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around personal budget basics.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns personal budget basics from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, personal budget basics becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「个人预算基础」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「个人预算基础」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「个人预算基础」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「个人预算基础」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "travel-planning-smartly",
+    "title": "Travel Planning Smartly",
+    "titleZh": "高效旅行规划",
+    "summary": "This article introduces a lightweight system for travel planning smartly, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「高效旅行规划」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "日常生活",
+    "minutes": 7,
+    "updatedAt": "2026-02-09",
+    "tags": [
+      "生活",
+      "习惯",
+      "旅行"
+    ],
+    "highlights": [
+      "Define a minimum version of travel planning smartly that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「高效旅行规划」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
+    ],
+    "paragraphs": [
+      "Travel Planning Smartly is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around travel planning smartly.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns travel planning smartly from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, travel planning smartly becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「高效旅行规划」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「高效旅行规划」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「高效旅行规划」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「高效旅行规划」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "reading-habit-system",
+    "title": "A Reading Habit System",
+    "titleZh": "阅读习惯系统",
+    "summary": "This article introduces a lightweight system for a reading habit system, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「阅读习惯系统」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "日常生活",
+    "minutes": 8,
+    "updatedAt": "2026-02-08",
+    "tags": [
+      "生活",
+      "习惯",
+      "阅读"
+    ],
+    "highlights": [
+      "Define a minimum version of a reading habit system that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「阅读习惯系统」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
+    ],
+    "paragraphs": [
+      "A Reading Habit System is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around a reading habit system.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns a reading habit system from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, a reading habit system becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「阅读习惯系统」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「阅读习惯系统」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「阅读习惯系统」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「阅读习惯系统」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "family-calendar-sync",
+    "title": "Family Calendar Sync",
+    "titleZh": "家庭日程同步",
+    "summary": "This article introduces a lightweight system for family calendar sync, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「家庭日程同步」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "日常生活",
+    "minutes": 9,
+    "updatedAt": "2026-02-07",
+    "tags": [
+      "生活",
+      "习惯",
+      "家庭"
+    ],
+    "highlights": [
+      "Define a minimum version of family calendar sync that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「家庭日程同步」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "routine",
+        "meaning": "日常流程"
+      },
+      {
+        "word": "consistency",
+        "meaning": "持续性"
+      },
+      {
+        "word": "recovery",
+        "meaning": "恢复；修复"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡"
+      }
+    ],
+    "paragraphs": [
+      "Family Calendar Sync is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around family calendar sync.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns family calendar sync from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, family calendar sync becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「家庭日程同步」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「家庭日程同步」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「家庭日程同步」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「家庭日程同步」会越来越稳定，因为你的系统能够承受忙碌和中断。"
     ]
   },
   {
     "id": "city-walks-and-observation",
     "title": "City Walks as Creative Training",
-    "subtitle": "Observe details to improve descriptive language",
-    "summary": "Walking with attention can sharpen both vocabulary and storytelling. This article shares an observation framework you can practice outdoors.",
-    "level": "Intermediate",
-    "category": "Culture",
-    "minutes": 7,
-    "updatedAt": "2026-02-12",
-    "tags": ["Creativity", "Observation", "Storytelling"],
+    "titleZh": "把城市漫步当作创意训练",
+    "summary": "This article introduces a lightweight system for city walks as creative training, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「把城市漫步当作创意训练」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "文化",
+    "minutes": 5,
+    "updatedAt": "2026-02-26",
+    "tags": [
+      "文化",
+      "表达",
+      "观察"
+    ],
     "highlights": [
-      "Observation creates concrete language, not abstract filler.",
-      "Capture contrasts: old/new, loud/quiet, crowded/empty.",
-      "Turn notes into short descriptive paragraphs the same day."
+      "Define a minimum version of city walks as creative training that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「把城市漫步当作创意训练」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
     ],
     "vocabulary": [
-      { "word": "texture", "meaning": "质感；纹理" },
-      { "word": "contrast", "meaning": "对比" },
-      { "word": "ambient", "meaning": "环境的；周围的" },
-      { "word": "glimpse", "meaning": "一瞥" }
+      {
+        "word": "narrative",
+        "meaning": "叙事"
+      },
+      {
+        "word": "context",
+        "meaning": "语境；背景"
+      },
+      {
+        "word": "perspective",
+        "meaning": "视角"
+      },
+      {
+        "word": "nuance",
+        "meaning": "细微差别"
+      }
     ],
     "paragraphs": [
-      "Creative writing improves when your language is rooted in concrete details. A city walk can be a practical training ground. Instead of walking on autopilot, choose one street and observe it with intent.",
-      "Use a three-layer lens: what you see, what you hear, and what changes over time. Note the color of signs, the rhythm of footsteps, and how light shifts between buildings. These details provide texture that makes your writing vivid.",
-      "Focus on contrast. A quiet bookstore next to a loud bus stop. A modern glass tower behind a weathered brick wall. Contrast naturally creates narrative tension and helps readers visualize the scene.",
-      "After the walk, write a short paragraph while memory is fresh. Keep sentences simple, then revise for precision. Over time, this practice expands vocabulary and strengthens your ability to communicate atmosphere."
+      "City Walks as Creative Training is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around city walks as creative training.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns city walks as creative training from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, city walks as creative training becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「把城市漫步当作创意训练」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「把城市漫步当作创意训练」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「把城市漫步当作创意训练」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「把城市漫步当作创意训练」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "museum-note-taking",
+    "title": "Museum Note Taking Method",
+    "titleZh": "博物馆笔记方法",
+    "summary": "This article introduces a lightweight system for museum note taking method, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「博物馆笔记方法」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "文化",
+    "minutes": 6,
+    "updatedAt": "2026-02-25",
+    "tags": [
+      "文化",
+      "表达",
+      "学习"
+    ],
+    "highlights": [
+      "Define a minimum version of museum note taking method that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「博物馆笔记方法」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "narrative",
+        "meaning": "叙事"
+      },
+      {
+        "word": "context",
+        "meaning": "语境；背景"
+      },
+      {
+        "word": "perspective",
+        "meaning": "视角"
+      },
+      {
+        "word": "nuance",
+        "meaning": "细微差别"
+      }
+    ],
+    "paragraphs": [
+      "Museum Note Taking Method is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around museum note taking method.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns museum note taking method from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, museum note taking method becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「博物馆笔记方法」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「博物馆笔记方法」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「博物馆笔记方法」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「博物馆笔记方法」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "film-review-framework",
+    "title": "Film Review Framework",
+    "titleZh": "电影评论框架",
+    "summary": "This article introduces a lightweight system for film review framework, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「电影评论框架」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "文化",
+    "minutes": 7,
+    "updatedAt": "2026-02-24",
+    "tags": [
+      "文化",
+      "表达",
+      "写作"
+    ],
+    "highlights": [
+      "Define a minimum version of film review framework that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「电影评论框架」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "narrative",
+        "meaning": "叙事"
+      },
+      {
+        "word": "context",
+        "meaning": "语境；背景"
+      },
+      {
+        "word": "perspective",
+        "meaning": "视角"
+      },
+      {
+        "word": "nuance",
+        "meaning": "细微差别"
+      }
+    ],
+    "paragraphs": [
+      "Film Review Framework is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around film review framework.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns film review framework from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, film review framework becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「电影评论框架」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「电影评论框架」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「电影评论框架」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「电影评论框架」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "podcast-learning-method",
+    "title": "Podcast Learning Method",
+    "titleZh": "播客学习方法",
+    "summary": "This article introduces a lightweight system for podcast learning method, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「播客学习方法」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "文化",
+    "minutes": 8,
+    "updatedAt": "2026-02-23",
+    "tags": [
+      "文化",
+      "表达",
+      "听力"
+    ],
+    "highlights": [
+      "Define a minimum version of podcast learning method that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「播客学习方法」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "narrative",
+        "meaning": "叙事"
+      },
+      {
+        "word": "context",
+        "meaning": "语境；背景"
+      },
+      {
+        "word": "perspective",
+        "meaning": "视角"
+      },
+      {
+        "word": "nuance",
+        "meaning": "细微差别"
+      }
+    ],
+    "paragraphs": [
+      "Podcast Learning Method is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around podcast learning method.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns podcast learning method from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, podcast learning method becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「播客学习方法」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「播客学习方法」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「播客学习方法」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「播客学习方法」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "book-summary-technique",
+    "title": "Book Summary Technique",
+    "titleZh": "读书总结技巧",
+    "summary": "This article introduces a lightweight system for book summary technique, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「读书总结技巧」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "文化",
+    "minutes": 9,
+    "updatedAt": "2026-02-22",
+    "tags": [
+      "文化",
+      "表达",
+      "阅读"
+    ],
+    "highlights": [
+      "Define a minimum version of book summary technique that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「读书总结技巧」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "narrative",
+        "meaning": "叙事"
+      },
+      {
+        "word": "context",
+        "meaning": "语境；背景"
+      },
+      {
+        "word": "perspective",
+        "meaning": "视角"
+      },
+      {
+        "word": "nuance",
+        "meaning": "细微差别"
+      }
+    ],
+    "paragraphs": [
+      "Book Summary Technique is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around book summary technique.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns book summary technique from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, book summary technique becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「读书总结技巧」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「读书总结技巧」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「读书总结技巧」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「读书总结技巧」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "storytelling-with-examples",
+    "title": "Storytelling with Real Examples",
+    "titleZh": "用真实案例讲故事",
+    "summary": "This article introduces a lightweight system for storytelling with real examples, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「用真实案例讲故事」，并在低压力下持续改进。",
+    "level": "高级",
+    "category": "文化",
+    "minutes": 5,
+    "updatedAt": "2026-02-21",
+    "tags": [
+      "文化",
+      "表达"
+    ],
+    "highlights": [
+      "Define a minimum version of storytelling with real examples that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「用真实案例讲故事」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "narrative",
+        "meaning": "叙事"
+      },
+      {
+        "word": "context",
+        "meaning": "语境；背景"
+      },
+      {
+        "word": "perspective",
+        "meaning": "视角"
+      },
+      {
+        "word": "nuance",
+        "meaning": "细微差别"
+      }
+    ],
+    "paragraphs": [
+      "Storytelling with Real Examples is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around storytelling with real examples.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns storytelling with real examples from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, storytelling with real examples becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「用真实案例讲故事」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「用真实案例讲故事」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「用真实案例讲故事」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「用真实案例讲故事」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "cross-cultural-communication",
+    "title": "Cross Cultural Communication",
+    "titleZh": "跨文化沟通",
+    "summary": "This article introduces a lightweight system for cross cultural communication, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「跨文化沟通」，并在低压力下持续改进。",
+    "level": "高级",
+    "category": "文化",
+    "minutes": 6,
+    "updatedAt": "2026-02-20",
+    "tags": [
+      "文化",
+      "表达",
+      "沟通"
+    ],
+    "highlights": [
+      "Define a minimum version of cross cultural communication that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「跨文化沟通」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "narrative",
+        "meaning": "叙事"
+      },
+      {
+        "word": "context",
+        "meaning": "语境；背景"
+      },
+      {
+        "word": "perspective",
+        "meaning": "视角"
+      },
+      {
+        "word": "nuance",
+        "meaning": "细微差别"
+      }
+    ],
+    "paragraphs": [
+      "Cross Cultural Communication is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around cross cultural communication.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns cross cultural communication from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, cross cultural communication becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「跨文化沟通」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「跨文化沟通」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「跨文化沟通」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「跨文化沟通」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "coffee-chat-networking",
+    "title": "Coffee Chat Networking",
+    "titleZh": "咖啡聊天社交法",
+    "summary": "This article introduces a lightweight system for coffee chat networking, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「咖啡聊天社交法」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "文化",
+    "minutes": 7,
+    "updatedAt": "2026-02-19",
+    "tags": [
+      "文化",
+      "表达",
+      "社交"
+    ],
+    "highlights": [
+      "Define a minimum version of coffee chat networking that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「咖啡聊天社交法」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "narrative",
+        "meaning": "叙事"
+      },
+      {
+        "word": "context",
+        "meaning": "语境；背景"
+      },
+      {
+        "word": "perspective",
+        "meaning": "视角"
+      },
+      {
+        "word": "nuance",
+        "meaning": "细微差别"
+      }
+    ],
+    "paragraphs": [
+      "Coffee Chat Networking is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around coffee chat networking.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns coffee chat networking from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, coffee chat networking becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「咖啡聊天社交法」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「咖啡聊天社交法」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「咖啡聊天社交法」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「咖啡聊天社交法」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "volunteer-work-impact",
+    "title": "Volunteer Work and Personal Impact",
+    "titleZh": "志愿服务与个人成长",
+    "summary": "This article introduces a lightweight system for volunteer work and personal impact, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「志愿服务与个人成长」，并在低压力下持续改进。",
+    "level": "入门",
+    "category": "文化",
+    "minutes": 8,
+    "updatedAt": "2026-02-18",
+    "tags": [
+      "文化",
+      "表达",
+      "公益"
+    ],
+    "highlights": [
+      "Define a minimum version of volunteer work and personal impact that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「志愿服务与个人成长」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "narrative",
+        "meaning": "叙事"
+      },
+      {
+        "word": "context",
+        "meaning": "语境；背景"
+      },
+      {
+        "word": "perspective",
+        "meaning": "视角"
+      },
+      {
+        "word": "nuance",
+        "meaning": "细微差别"
+      }
+    ],
+    "paragraphs": [
+      "Volunteer Work and Personal Impact is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around volunteer work and personal impact.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns volunteer work and personal impact from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, volunteer work and personal impact becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「志愿服务与个人成长」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「志愿服务与个人成长」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「志愿服务与个人成长」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「志愿服务与个人成长」会越来越稳定，因为你的系统能够承受忙碌和中断。"
+    ]
+  },
+  {
+    "id": "public-speaking-confidence",
+    "title": "Public Speaking Confidence",
+    "titleZh": "公开表达自信训练",
+    "summary": "This article introduces a lightweight system for public speaking confidence, so you can apply it this week and keep improving without extra pressure.",
+    "summaryZh": "本文提供一套轻量方法，帮助你在一周内实践「公开表达自信训练」，并在低压力下持续改进。",
+    "level": "进阶",
+    "category": "文化",
+    "minutes": 9,
+    "updatedAt": "2026-02-17",
+    "tags": [
+      "文化",
+      "表达",
+      "演讲"
+    ],
+    "highlights": [
+      "Define a minimum version of public speaking confidence that you can finish on busy days.",
+      "Track one visible metric to reduce guesswork and keep momentum.",
+      "Review weekly and simplify the next step instead of adding more tasks."
+    ],
+    "highlightsZh": [
+      "先定义「公开表达自信训练」的最小可执行版本，忙碌时也能完成。",
+      "只跟踪一个可见指标，减少拍脑袋判断并保持节奏。",
+      "每周复盘一次，优先简化下一步，而不是继续加任务。"
+    ],
+    "vocabulary": [
+      {
+        "word": "narrative",
+        "meaning": "叙事"
+      },
+      {
+        "word": "context",
+        "meaning": "语境；背景"
+      },
+      {
+        "word": "perspective",
+        "meaning": "视角"
+      },
+      {
+        "word": "nuance",
+        "meaning": "细微差别"
+      }
+    ],
+    "paragraphs": [
+      "Public Speaking Confidence is useful for most learners, but execution often breaks when people rely on motivation alone. Busy schedules, context switching, and unclear goals quickly reduce quality. A better approach is to build a small repeatable system around public speaking confidence.",
+      "Start with a clear trigger and a tiny target. Decide when to begin, how long to stay focused, and what “done” means for today. This turns public speaking confidence from an abstract idea into a concrete action.",
+      "Next, shape your environment. Keep tools in one place, remove one common distraction, and write down the first action before you start. These small setup steps lower friction and protect your attention.",
+      "Finally, run a weekly review. Keep what worked, remove what failed, and adjust one detail for the next cycle. Over time, public speaking confidence becomes stable because your system can survive busy days and interruptions."
+    ],
+    "paragraphsZh": [
+      "「公开表达自信训练」对大多数学习者都很有价值，但如果只依赖一时动力，执行很容易中断。日程拥挤、频繁切换和目标不清会快速拉低质量。更稳妥的做法，是围绕「公开表达自信训练」建立一个可重复的小系统。",
+      "先设置清晰触发点和一个足够小的目标。明确何时开始、专注多久，以及今天做到什么算完成。这样就能把「公开表达自信训练」从抽象概念变成具体行动。",
+      "然后处理环境因素：把工具放在固定位置、移除一个高频干扰源、开始前先写下第一步动作。这些准备看似很小，却能显著降低阻力并保护注意力。",
+      "最后每周做一次复盘。保留有效做法、删掉无效动作，并为下一轮只调整一个细节。长期来看，「公开表达自信训练」会越来越稳定，因为你的系统能够承受忙碌和中断。"
     ]
   }
 ]

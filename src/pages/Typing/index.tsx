@@ -131,7 +131,7 @@ const App: React.FC = () => {
       {state.isFinished && <ResultScreen />}
       <div className="flex h-full w-full flex-col overflow-hidden">
         <Header>
-          <DictChapterButton hideDictSwitch />
+          <DictChapterButton />
           <PronunciationSwitcher />
           <Switcher hideSidebarDuplicatedActions />
           <StartButton isLoading={isLoading} />

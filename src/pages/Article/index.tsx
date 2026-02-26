@@ -1,16 +1,24 @@
 import TypingPracticePanel from './TypingPracticePanel'
-import { findArticleById } from '@/resources/articles'
+import { findArticleById, getArticleCategoryLabel, getArticleLevelLabel } from '@/resources/articles'
 import { useArticles } from '@/resources/useArticles'
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import IconArrowNarrowRight from '~icons/tabler/arrow-narrow-right'
 import IconKeyboard from '~icons/tabler/keyboard'
 
 export default function ArticlePage() {
+  const LAST_ARTICLE_ID_KEY = 'qwerty-learner:last-article-id'
   const { id } = useParams()
   const { articles, error, isLoading } = useArticles()
   const [isTypingPracticeOpen, setIsTypingPracticeOpen] = useState(true)
   const currentArticle = useMemo(() => findArticleById(articles, id), [articles, id])
+
+  useEffect(() => {
+    if (!currentArticle?.id) {
+      return
+    }
+    window.localStorage.setItem(LAST_ARTICLE_ID_KEY, currentArticle.id)
+  }, [currentArticle?.id])
 
   if (error) {
     return (
@@ -62,10 +70,10 @@ export default function ArticlePage() {
         <article className="h-full overflow-y-auto rounded-2xl border border-slate-200/90 bg-white/88 p-6 shadow-sm dark:border-slate-700/70 dark:bg-slate-900/70">
           <div className="mb-4 flex flex-wrap items-center gap-2">
             <span className="rounded-full bg-indigo-50 px-2 py-1 text-[11px] font-semibold text-indigo-700 dark:bg-indigo-500/20 dark:text-indigo-200">
-              {currentArticle.level}
+              {getArticleLevelLabel(currentArticle.level)}
             </span>
             <span className="rounded-full bg-slate-100 px-2 py-1 text-[11px] font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300">
-              {currentArticle.category}
+              {getArticleCategoryLabel(currentArticle.category)}
             </span>
             <span className="rounded-full bg-slate-100 px-2 py-1 text-[11px] font-semibold text-slate-500 dark:bg-slate-800 dark:text-slate-400">
               {currentArticle.updatedAt}
@@ -73,7 +81,7 @@ export default function ArticlePage() {
           </div>
 
           <h2 className="text-3xl font-extrabold leading-tight text-slate-900 dark:text-slate-100">{currentArticle.title}</h2>
-          <p className="mt-2 text-slate-500 dark:text-slate-400">{currentArticle.subtitle}</p>
+          {currentArticle.titleZh && <p className="mt-2 text-lg font-semibold text-slate-700 dark:text-slate-200">{currentArticle.titleZh}</p>}
 
           <div className="mt-6 flex flex-wrap gap-2">
             {currentArticle.tags.map((tag) => (
@@ -87,7 +95,12 @@ export default function ArticlePage() {
 
           <div className="mt-8 space-y-6 text-[18px] leading-9 text-slate-700 dark:text-slate-300">
             {currentArticle.paragraphs.map((paragraph, index) => (
-              <p key={`${currentArticle.id}-paragraph-${index}`}>{paragraph}</p>
+              <div key={`${currentArticle.id}-paragraph-${index}`}>
+                <p>{paragraph}</p>
+                {currentArticle.paragraphsZh?.[index] && (
+                  <p className="mt-2 text-base leading-8 text-slate-500 dark:text-slate-400">{currentArticle.paragraphsZh[index]}</p>
+                )}
+              </div>
             ))}
           </div>
         </article>

@@ -1,0 +1,3 @@
+[functions.alipay-payment]
+verify_jwt = false
+

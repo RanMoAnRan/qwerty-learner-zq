@@ -11,9 +11,11 @@ import IconBook2 from '~icons/tabler/book-2'
 import IconBooks from '~icons/tabler/books'
 import IconChartBar from '~icons/tabler/chart-bar'
 import IconCircleX from '~icons/tabler/circle-x'
+import IconCrown from '~icons/tabler/crown'
 import IconHome from '~icons/tabler/home'
 import IconLogin2 from '~icons/tabler/login-2'
 import IconSettings from '~icons/tabler/settings'
+import IconUser from '~icons/tabler/user'
 
 type NavItem = {
   to: string
@@ -29,6 +31,8 @@ const navItems: NavItem[] = [
   { to: '/article-gallery', label: '文章库', hint: 'Article Gallery', icon: IconBook2 },
   { to: '/error-book', label: '错题本', hint: 'Review', icon: IconCircleX },
   { to: '/analysis', label: '数据统计', hint: 'Analytics', icon: IconChartBar },
+  { to: '/go-premium', label: '会员中心', hint: 'Membership', icon: IconCrown },
+  { to: '/profile', label: '个人资料', hint: 'Profile', icon: IconUser },
 ]
 
 export default function DesktopShell() {
@@ -68,14 +72,14 @@ export default function DesktopShell() {
           <p className="truncate text-2xl font-black tracking-[0.08em] text-slate-700 dark:text-slate-300">KeyFlow</p>
         </div>
 
-        <nav className="mt-5 flex flex-1 flex-col gap-2">
+        <nav className="mt-5 flex flex-1 flex-col gap-1.5">
           {navItems.map((item) => {
             const Icon = item.icon
             const to = item.to === '/article' ? articleNavTo : item.to
             return (
               <NavLink
                 className={({ isActive }) =>
-                  `group flex items-center gap-2.5 rounded-2xl border px-2.5 py-2.5 transition-all duration-200 ${
+                  `group flex items-center gap-2 rounded-xl border px-2.5 py-1.5 transition-all duration-200 ${
                     isActive
                       ? 'dark:border-indigo-400/35 border-indigo-200 bg-indigo-100 text-indigo-700 shadow-[0_12px_24px_-16px_rgba(99,102,241,0.65)] dark:bg-indigo-500/20 dark:text-indigo-200 dark:shadow-[0_16px_28px_-20px_rgba(79,70,229,0.9)]'
                       : 'border-transparent text-slate-600 hover:border-indigo-100 hover:bg-indigo-50 dark:text-slate-300 dark:hover:border-slate-700 dark:hover:bg-slate-800/80'
@@ -85,12 +89,12 @@ export default function DesktopShell() {
                 key={item.to}
                 to={to}
               >
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-600 transition-colors group-hover:bg-indigo-100 group-hover:text-indigo-700 dark:bg-slate-800 dark:text-slate-300 dark:group-hover:bg-indigo-500/30 dark:group-hover:text-indigo-200">
+                <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-slate-100 text-slate-600 transition-colors group-hover:bg-indigo-100 group-hover:text-indigo-700 dark:bg-slate-800 dark:text-slate-300 dark:group-hover:bg-indigo-500/30 dark:group-hover:text-indigo-200">
                   <Icon className="h-4 w-4" />
                 </span>
                 <span className="flex min-w-0 flex-col">
                   <span className="truncate text-sm font-semibold">{item.label}</span>
-                  <span className="text-[11px] text-slate-500 dark:text-slate-400">{item.hint}</span>
+                  <span className="text-[11px] leading-4 text-slate-500 dark:text-slate-400">{item.hint}</span>
                 </span>
               </NavLink>
             )

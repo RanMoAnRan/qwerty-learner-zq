@@ -8,7 +8,7 @@ import MobilePage from './pages/Mobile'
 import TypingPage from './pages/Typing'
 import { isOpenDarkModeAtom } from '@/store'
 import { businessSessionAtom } from '@/store/businessAtom'
-import { getSupabaseClient, isSupabaseConfigured, toBusinessSession } from '@/utils/supabaseAuth'
+import { fetchLatestPremiumExpiresAt, getSupabaseClient, isSupabaseConfigured, toBusinessSession } from '@/utils/supabaseAuth'
 import 'animate.css'
 import { useAtomValue, useSetAtom } from 'jotai'
 import mixpanel from 'mixpanel-browser'
@@ -53,12 +53,27 @@ function Root() {
 
     const supabase = getSupabaseClient()
 
+    const syncSession = async (user: Awaited<ReturnType<typeof supabase.auth.getUser>>['data']['user']) => {
+      if (!user) {
+        setSession(null)
+        return
+      }
+      const premiumExpiresAt = await fetchLatestPremiumExpiresAt(user.id)
+      setSession((previous) => {
+        const next = toBusinessSession(user, previous)
+        return {
+          ...next,
+          premiumExpiresAt: premiumExpiresAt ?? next.premiumExpiresAt,
+        }
+      })
+    }
+
     supabase.auth.getUser().then(({ data }) => {
-      setSession((previous) => (data.user ? toBusinessSession(data.user, previous) : previous))
+      void syncSession(data.user ?? null)
     })
 
     const { data: authListener } = supabase.auth.onAuthStateChange((_event, authSession) => {
-      setSession((previous) => (authSession?.user ? toBusinessSession(authSession.user, previous) : null))
+      void syncSession(authSession?.user ?? null)
     })
 
     return () => {

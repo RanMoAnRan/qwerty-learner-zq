@@ -1,6 +1,9 @@
 import { Button } from '@/components/ui/button'
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog'
+import { PaymentCheckout } from '@/pages/Payment'
 import { businessSessionAtom } from '@/store/businessAtom'
 import { useAtomValue } from 'jotai'
+import { useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import IconCheck from '~icons/tabler/check'
 import IconCrown from '~icons/tabler/crown'
@@ -77,6 +80,23 @@ function getAccentClass(accent: Plan['accent'], isRecommended: boolean) {
 export default function PremiumPage() {
   const session = useAtomValue(businessSessionAtom)
   const navigate = useNavigate()
+  const [selectedPlanCode, setSelectedPlanCode] = useState<string>('monthly')
+  const [isPayDialogOpen, setIsPayDialogOpen] = useState(false)
+  const [paySuccessMessage, setPaySuccessMessage] = useState('')
+
+  const selectedPlan = useMemo(() => {
+    return plans.find((plan) => plan.code === selectedPlanCode) ?? plans[0]
+  }, [selectedPlanCode])
+
+  const openPayDialog = (planCode: string) => {
+    if (!session) {
+      navigate('/login')
+      return
+    }
+    setSelectedPlanCode(planCode)
+    setPaySuccessMessage('')
+    setIsPayDialogOpen(true)
+  }
 
   return (
     <main className="mx-auto flex h-full w-full max-w-5xl flex-col overflow-y-auto px-4 py-8 md:px-6">
@@ -107,6 +127,11 @@ export default function PremiumPage() {
           。
         </p>
       )}
+      {paySuccessMessage ? (
+        <p className="mt-4 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700 dark:border-emerald-700/40 dark:bg-emerald-500/10 dark:text-emerald-300">
+          {paySuccessMessage}
+        </p>
+      ) : null}
 
       <div className="mt-8 grid gap-5 md:grid-cols-3">
         {plans.map((plan) => (
@@ -144,12 +169,39 @@ export default function PremiumPage() {
               ))}
             </ul>
 
-            <Button className="mt-5 w-full" onClick={() => navigate(`/payment?plan=${plan.code}`)}>
+            <Button className="mt-5 w-full" onClick={() => openPayDialog(plan.code)}>
               立即开通
             </Button>
           </section>
         ))}
       </div>
+
+      <Dialog open={isPayDialogOpen} onOpenChange={setIsPayDialogOpen}>
+        <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-xl">
+          <DialogHeader>
+            <DialogTitle>支付宝开通会员</DialogTitle>
+            <DialogDescription>
+              当前套餐：{selectedPlan.name}（{selectedPlan.days} 天，¥{selectedPlan.price}）
+            </DialogDescription>
+          </DialogHeader>
+          <PaymentCheckout
+            embedded
+            showBackLink={false}
+            navigateOnPaid={false}
+            planCode={selectedPlan.code}
+            onPaid={(result) => {
+              setIsPayDialogOpen(false)
+              setPaySuccessMessage(
+                `支付成功，订单 ${result.orderNo} 已完成。会员到期：${formatExpire(result.premiumExpiresAt ?? session?.premiumExpiresAt)}`,
+              )
+            }}
+            onRequireLogin={() => {
+              setIsPayDialogOpen(false)
+              navigate('/login')
+            }}
+          />
+        </DialogContent>
+      </Dialog>
     </main>
   )
 }

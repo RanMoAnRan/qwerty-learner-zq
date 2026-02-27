@@ -41,3 +41,29 @@ export function toBusinessSession(user: User, previous?: BusinessSession | null)
     premiumExpiresAt: previous?.userId === user.id ? previous.premiumExpiresAt : undefined,
   }
 }
+
+export async function fetchLatestPremiumExpiresAt(userId: string) {
+  if (!userId) {
+    return undefined
+  }
+
+  try {
+    const supabase = getSupabaseClient()
+    const { data, error } = await supabase
+      .from('subscriptions')
+      .select('end_at')
+      .eq('user_id', userId)
+      .eq('status', 'active')
+      .order('end_at', { ascending: false })
+      .limit(1)
+      .maybeSingle()
+
+    if (error) {
+      return undefined
+    }
+
+    return data?.end_at || undefined
+  } catch {
+    return undefined
+  }
+}

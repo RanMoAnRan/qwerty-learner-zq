@@ -1,5 +1,5 @@
-import Loading from './components/Loading'
 import DesktopShell from './components/DesktopShell'
+import Loading from './components/Loading'
 import './index.css'
 import { ErrorBook } from './pages/ErrorBook'
 import { FriendLinks } from './pages/FriendLinks'
@@ -7,8 +7,10 @@ import GalleryPage from './pages/Gallery-N'
 import MobilePage from './pages/Mobile'
 import TypingPage from './pages/Typing'
 import { isOpenDarkModeAtom } from '@/store'
+import { businessSessionAtom } from '@/store/businessAtom'
+import { getSupabaseClient, isSupabaseConfigured, toBusinessSession } from '@/utils/supabaseAuth'
 import 'animate.css'
-import { useAtomValue } from 'jotai'
+import { useAtomValue, useSetAtom } from 'jotai'
 import mixpanel from 'mixpanel-browser'
 import process from 'process'
 import React, { Suspense, lazy, useEffect, useState } from 'react'
@@ -24,6 +26,7 @@ const PaymentPage = lazy(() => import('./pages/Payment'))
 const PaymentResultPage = lazy(() => import('./pages/Payment/Result'))
 const ShareLandingPage = lazy(() => import('./pages/Share/Landing'))
 const SettingsPage = lazy(() => import('./pages/Settings'))
+const ProfilePage = lazy(() => import('./pages/Profile'))
 const ArticlePage = lazy(() => import('./pages/Article'))
 const ArticleGalleryPage = lazy(() => import('./pages/ArticleGallery'))
 
@@ -37,9 +40,31 @@ if (process.env.NODE_ENV === 'production') {
 
 function Root() {
   const darkMode = useAtomValue(isOpenDarkModeAtom)
+  const setSession = useSetAtom(businessSessionAtom)
+
   useEffect(() => {
     darkMode ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')
   }, [darkMode])
+
+  useEffect(() => {
+    if (!isSupabaseConfigured()) {
+      return
+    }
+
+    const supabase = getSupabaseClient()
+
+    supabase.auth.getUser().then(({ data }) => {
+      setSession((previous) => (data.user ? toBusinessSession(data.user, previous) : previous))
+    })
+
+    const { data: authListener } = supabase.auth.onAuthStateChange((_event, authSession) => {
+      setSession((previous) => (authSession?.user ? toBusinessSession(authSession.user, previous) : null))
+    })
+
+    return () => {
+      authListener.subscription.unsubscribe()
+    }
+  }, [setSession])
 
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600)
 
@@ -75,6 +100,7 @@ function Root() {
                 <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/analysis" element={<AnalysisPage />} />
                 <Route path="/settings" element={<SettingsPage />} />
+                <Route path="/profile" element={<ProfilePage />} />
                 <Route path="/article" element={<ArticlePage />} />
                 <Route path="/article/:id" element={<ArticlePage />} />
                 <Route path="/article-gallery" element={<ArticleGalleryPage />} />

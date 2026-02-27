@@ -9,26 +9,31 @@ import { useEffect, useMemo, useState } from 'react'
 import useSound from 'use-sound'
 import type { HookOptions } from 'use-sound/dist/types'
 
-const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
+const pronunciationApi = import.meta.env.DEV ? '/api/youdao-dictvoice?audio=' : 'https://dict.youdao.com/dictvoice?audio='
+
+function encodeAudioWord(word: string) {
+  return encodeURIComponent(word)
+}
+
 export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
   switch (pronunciation) {
     case 'uk':
-      return `${pronunciationApi}${word}&type=1`
+      return `${pronunciationApi}${encodeAudioWord(word)}&type=1`
     case 'us':
-      return `${pronunciationApi}${word}&type=2`
+      return `${pronunciationApi}${encodeAudioWord(word)}&type=2`
     case 'romaji':
-      return `${pronunciationApi}${romajiToHiragana(word)}&le=jap`
+      return `${pronunciationApi}${encodeAudioWord(romajiToHiragana(word))}&le=jap`
     case 'zh':
-      return `${pronunciationApi}${word}&le=zh`
+      return `${pronunciationApi}${encodeAudioWord(word)}&le=zh`
     case 'ja':
-      return `${pronunciationApi}${word}&le=jap`
+      return `${pronunciationApi}${encodeAudioWord(word)}&le=jap`
     case 'de':
-      return `${pronunciationApi}${word}&le=de`
+      return `${pronunciationApi}${encodeAudioWord(word)}&le=de`
     case 'hapin':
     case 'kk':
-      return `${pronunciationApi}${word}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
+      return `${pronunciationApi}${encodeAudioWord(word)}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
     case 'id':
-      return `${pronunciationApi}${word}&le=id`
+      return `${pronunciationApi}${encodeAudioWord(word)}&le=id`
     default:
       return ''
   }
@@ -89,8 +94,6 @@ export function usePrefetchPronunciationSound(word: string | undefined) {
       audio.src = soundUrl
       audio.preload = 'auto'
 
-      // gpt 说这这两行能尽可能规避下载插件被触发问题。 本地测试不加也可以，考虑到别的插件可能有问题，所以加上保险
-      audio.crossOrigin = 'anonymous'
       audio.style.display = 'none'
 
       head.appendChild(audio)

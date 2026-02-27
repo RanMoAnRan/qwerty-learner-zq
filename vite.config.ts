@@ -53,5 +53,14 @@ export default defineConfig(async ({ mode }) => {
         localsConvention: 'camelCaseOnly',
       },
     },
+    server: {
+      proxy: {
+        '/api/youdao-dictvoice': {
+          target: 'https://dict.youdao.com',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api\/youdao-dictvoice/, '/dictvoice'),
+        },
+      },
+    },
   }
 })

@@ -3,7 +3,18 @@ import { businessSessionAtom } from '@/store/businessAtom'
 import { getSupabaseClient, isSupabaseConfigured, toBusinessSession } from '@/utils/supabaseAuth'
 import { useAtom } from 'jotai'
 import { type FormEvent, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
+
+function resolveSafeRedirectPath(value: string | null | undefined, fallback = '/') {
+  const normalized = (value || '').trim()
+  if (!normalized) {
+    return fallback
+  }
+  if (!normalized.startsWith('/') || normalized.startsWith('//')) {
+    return fallback
+  }
+  return normalized
+}
 
 export default function LoginPage() {
   const [session, setSession] = useAtom(businessSessionAtom)
@@ -12,6 +23,9 @@ export default function LoginPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState('')
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
+  const redirectPath = resolveSafeRedirectPath(searchParams.get('redirect'), '/')
+  const signUpPath = `/sign-up?redirect=${encodeURIComponent(redirectPath)}`
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -42,7 +56,7 @@ export default function LoginPage() {
         throw new Error('登录成功但未获取到用户信息，请稍后重试。')
       }
       setSession((previous) => toBusinessSession(user, previous))
-      navigate('/')
+      navigate(redirectPath)
     } catch (err) {
       const signInMessage = err instanceof Error ? err.message : '登录失败，请检查邮箱和密码。'
       setError(signInMessage)
@@ -77,7 +91,7 @@ export default function LoginPage() {
       </form>
       <p className="mt-4 text-sm text-slate-600">
         没有账号？
-        <Link className="text-indigo-600" to="/sign-up">
+        <Link className="text-indigo-600" to={signUpPath}>
           去注册
         </Link>
       </p>

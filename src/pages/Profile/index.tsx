@@ -3,7 +3,7 @@ import { businessSessionAtom } from '@/store/businessAtom'
 import { getSupabaseClient, isSupabaseConfigured, toBusinessSession } from '@/utils/supabaseAuth'
 import { useAtom } from 'jotai'
 import { type FormEvent, useEffect, useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 function isNoRowsError(error: unknown) {
   if (!error || typeof error !== 'object') {
@@ -15,6 +15,7 @@ function isNoRowsError(error: unknown) {
 
 export default function ProfilePage() {
   const [session, setSession] = useAtom(businessSessionAtom)
+  const { pathname, search, hash } = useLocation()
   const [email, setEmail] = useState(session?.email ?? '')
   const [displayName, setDisplayName] = useState(session?.displayName ?? '')
   const [nickname, setNickname] = useState('')
@@ -35,6 +36,9 @@ export default function ProfilePage() {
     const trimmedEmail = email.trim()
     return trimmedEmail.includes('@') ? trimmedEmail.split('@')[0] : ''
   }, [email])
+  const redirectPath = `${pathname}${search}${hash}` || '/profile'
+  const loginPath = `/login?redirect=${encodeURIComponent(redirectPath)}`
+  const signUpPath = `/sign-up?redirect=${encodeURIComponent(redirectPath)}`
 
   useEffect(() => {
     if (!isSupabaseConfigured()) {
@@ -237,13 +241,44 @@ export default function ProfilePage() {
 
   if (!isLogin) {
     return (
-      <main className="mx-auto flex h-full w-full max-w-xl flex-col justify-center px-6">
-        <h1 className="text-2xl font-bold text-slate-800 dark:text-slate-100">个人资料</h1>
-        <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">登录后可修改个人信息和密码。</p>
-        <div className="mt-6">
-          <Link className="text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-300" to="/login">
-            去登录
-          </Link>
+      <main className="h-full overflow-auto px-6 py-7">
+        <section className="relative mx-auto mt-10 w-full max-w-3xl overflow-hidden rounded-3xl border border-slate-200/80 bg-white/90 p-8 shadow-[0_22px_60px_-36px_rgba(30,64,175,0.55)] dark:border-slate-700/70 dark:bg-slate-900/75 dark:shadow-[0_24px_64px_-42px_rgba(15,23,42,0.95)]">
+          <div className="pointer-events-none absolute -right-20 -top-24 h-56 w-56 rounded-full bg-cyan-200/70 blur-3xl dark:bg-cyan-400/20" />
+          <div className="pointer-events-none absolute -bottom-28 -left-12 h-56 w-56 rounded-full bg-indigo-200/70 blur-3xl dark:bg-indigo-500/20" />
+
+          <div className="relative">
+            <span className="dark:bg-indigo-500/15 inline-flex rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 dark:border-indigo-500/40 dark:text-indigo-200">
+              Profile Center
+            </span>
+            <h1 className="mt-4 text-3xl font-black tracking-tight text-slate-900 dark:text-slate-100">登录后解锁完整个人资料</h1>
+            <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
+              你可以在这里修改显示名称、昵称、头像地址，并随时更新登录密码，保证账号信息与练习身份保持一致。
+            </p>
+
+            <div className="mt-6 grid gap-3 sm:grid-cols-3">
+              <div className="rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-sm text-slate-700 dark:border-slate-700 dark:bg-slate-800/70 dark:text-slate-200">
+                修改显示名称
+              </div>
+              <div className="rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-sm text-slate-700 dark:border-slate-700 dark:bg-slate-800/70 dark:text-slate-200">
+                自定义头像地址
+              </div>
+              <div className="rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-sm text-slate-700 dark:border-slate-700 dark:bg-slate-800/70 dark:text-slate-200">
+                安全修改密码
+              </div>
+            </div>
+
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Button asChild>
+                <Link to={loginPath}>去登录</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to={signUpPath}>去注册</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+        <div className="mx-auto mt-5 w-full max-w-3xl text-center text-xs text-slate-500 dark:text-slate-400">
+          登录后会自动回到当前页面，继续编辑资料。
         </div>
       </main>
     )

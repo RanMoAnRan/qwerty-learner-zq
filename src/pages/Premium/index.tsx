@@ -80,6 +80,7 @@ function getAccentClass(accent: Plan['accent'], isRecommended: boolean) {
 export default function PremiumPage() {
   const session = useAtomValue(businessSessionAtom)
   const navigate = useNavigate()
+  const loginPath = '/login?redirect=%2Fgo-premium'
   const [selectedPlanCode, setSelectedPlanCode] = useState<string>('monthly')
   const [isPayDialogOpen, setIsPayDialogOpen] = useState(false)
   const [paySuccessMessage, setPaySuccessMessage] = useState('')
@@ -90,7 +91,7 @@ export default function PremiumPage() {
 
   const openPayDialog = (planCode: string) => {
     if (!session) {
-      navigate('/login')
+      navigate(loginPath)
       return
     }
     setSelectedPlanCode(planCode)
@@ -121,7 +122,7 @@ export default function PremiumPage() {
       ) : (
         <p className="mt-5 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-700 dark:border-amber-700/40 dark:bg-amber-500/10 dark:text-amber-300">
           购买前请先{' '}
-          <Link className="font-semibold underline" to="/login">
+          <Link className="font-semibold underline" to={loginPath}>
             登录账号
           </Link>
           。
@@ -197,7 +198,7 @@ export default function PremiumPage() {
             }}
             onRequireLogin={() => {
               setIsPayDialogOpen(false)
-              navigate('/login')
+              navigate(loginPath)
             }}
           />
         </DialogContent>

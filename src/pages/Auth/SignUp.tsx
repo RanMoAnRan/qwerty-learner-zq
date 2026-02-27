@@ -3,7 +3,18 @@ import { businessSessionAtom } from '@/store/businessAtom'
 import { getSupabaseClient, isSupabaseConfigured, toBusinessSession } from '@/utils/supabaseAuth'
 import { useAtom } from 'jotai'
 import { type FormEvent, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
+
+function resolveSafeRedirectPath(value: string | null | undefined, fallback = '/go-premium') {
+  const normalized = (value || '').trim()
+  if (!normalized) {
+    return fallback
+  }
+  if (!normalized.startsWith('/') || normalized.startsWith('//')) {
+    return fallback
+  }
+  return normalized
+}
 
 function getErrorMessage(error: unknown) {
   if (error instanceof Error) {
@@ -50,6 +61,9 @@ export default function SignUpPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState('')
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
+  const redirectPath = resolveSafeRedirectPath(searchParams.get('redirect'), '/go-premium')
+  const loginPath = `/login?redirect=${encodeURIComponent(redirectPath)}`
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -101,12 +115,12 @@ export default function SignUpPage() {
           throw signInError || new Error('注册成功，但自动登录失败。请前往登录页手动登录。')
         }
         setSession((previous) => toBusinessSession(signInData.user, previous))
-        navigate('/go-premium')
+        navigate(redirectPath)
         return
       }
 
       setSession((previous) => toBusinessSession(user, previous))
-      navigate('/go-premium')
+      navigate(redirectPath)
     } catch (err) {
       const signUpMessage = getErrorMessage(err) || '注册失败，请检查邮箱和密码后重试。'
       if (isRateLimitError(err)) {
@@ -130,7 +144,7 @@ export default function SignUpPage() {
           }
           setSession((previous) => toBusinessSession(signInData.user, previous))
           setMessage('已通过备用通道完成注册并自动登录。')
-          navigate('/go-premium')
+          navigate(redirectPath)
           return
         } catch {
           setError('注册请求过于频繁，且备用注册失败。请稍后重试或联系管理员。')
@@ -178,7 +192,7 @@ export default function SignUpPage() {
       </form>
       <p className="mt-4 text-sm text-slate-600">
         已有账号？
-        <Link className="text-indigo-600" to="/login">
+        <Link className="text-indigo-600" to={loginPath}>
           去登录
         </Link>
       </p>

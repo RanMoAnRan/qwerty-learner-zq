@@ -67,7 +67,11 @@ export default function PaymentPage() {
 
       {!session ? (
         <p className="mt-6 rounded-md bg-amber-50 px-3 py-2 text-sm text-amber-700">
-          Please <Link className="font-semibold underline" to="/login">login</Link> first.
+          Please{' '}
+          <Link className="font-semibold underline" to="/login">
+            login
+          </Link>{' '}
+          first.
         </p>
       ) : null}
 
@@ -76,11 +80,16 @@ export default function PaymentPage() {
         <p className="mt-2 text-sm text-slate-600">Plan: {plan.code}</p>
         <p className="mt-1 text-sm text-slate-600">Duration: {plan.days} days</p>
         <p className="mt-1 text-sm text-slate-600">Amount: CNY {plan.amount}</p>
-        <Button className="mt-4 w-full" onClick={onPay}>Pay Now (Mock)</Button>
+        <Button className="mt-4 w-full" onClick={onPay}>
+          Pay Now (Mock)
+        </Button>
       </section>
 
       <div className="mt-4 text-sm text-slate-600">
-        Need a different plan? <Link className="text-indigo-600" to="/go-premium">Back to premium page</Link>
+        Need a different plan?{' '}
+        <Link className="text-indigo-600" to="/go-premium">
+          Back to premium page
+        </Link>
       </div>
     </main>
   )

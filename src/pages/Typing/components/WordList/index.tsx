@@ -38,7 +38,7 @@ export default function WordList() {
         <button
           type="button"
           onClick={openModal}
-          className="fixed left-5 top-1/2 z-20 -translate-y-1/2 rounded-2xl border border-indigo-200/70 bg-white/90 px-3 py-3 text-lg shadow-[0_14px_36px_-20px_rgba(79,70,229,0.8)] backdrop-blur transition-all duration-200 hover:scale-105 hover:bg-indigo-50 focus:outline-none dark:border-indigo-800 dark:bg-gray-900/85 dark:hover:bg-gray-800"
+          className="dark:bg-gray-900/85 fixed left-5 top-1/2 z-20 -translate-y-1/2 rounded-2xl border border-indigo-200/70 bg-white/90 px-3 py-3 text-lg shadow-[0_14px_36px_-20px_rgba(79,70,229,0.8)] backdrop-blur transition-all duration-200 hover:scale-105 hover:bg-indigo-50 focus:outline-none dark:border-indigo-800 dark:hover:bg-gray-800"
         >
           <ListIcon className="h-5 w-5 text-lg text-indigo-500 dark:text-indigo-300" />
         </button>

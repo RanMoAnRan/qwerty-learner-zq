@@ -54,7 +54,7 @@ export default function ArticleGalleryPage() {
       </div>
 
       <div className="mb-5 grid gap-3 md:grid-cols-[1.8fr_1fr_1fr_1fr]">
-        <label className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white/85 px-3 py-2 dark:border-slate-700 dark:bg-slate-900/75">
+        <label className="bg-white/85 flex items-center gap-2 rounded-xl border border-slate-200 px-3 py-2 dark:border-slate-700 dark:bg-slate-900/75">
           <IconSearch className="h-4 w-4 text-slate-400 dark:text-slate-500" />
           <input
             className="w-full bg-transparent text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none dark:text-slate-200 dark:placeholder:text-slate-500"
@@ -64,7 +64,7 @@ export default function ArticleGalleryPage() {
           />
         </label>
         <select
-          className="rounded-xl border border-slate-200 bg-white/85 px-3 py-2 text-sm text-slate-700 focus:outline-none dark:border-slate-700 dark:bg-slate-900/75 dark:text-slate-200"
+          className="bg-white/85 rounded-xl border border-slate-200 px-3 py-2 text-sm text-slate-700 focus:outline-none dark:border-slate-700 dark:bg-slate-900/75 dark:text-slate-200"
           onChange={(event) => setSelectedCategory(event.target.value)}
           value={selectedCategory}
         >
@@ -76,7 +76,7 @@ export default function ArticleGalleryPage() {
           ))}
         </select>
         <select
-          className="rounded-xl border border-slate-200 bg-white/85 px-3 py-2 text-sm text-slate-700 focus:outline-none dark:border-slate-700 dark:bg-slate-900/75 dark:text-slate-200"
+          className="bg-white/85 rounded-xl border border-slate-200 px-3 py-2 text-sm text-slate-700 focus:outline-none dark:border-slate-700 dark:bg-slate-900/75 dark:text-slate-200"
           onChange={(event) => setSelectedLevel(event.target.value)}
           value={selectedLevel}
         >
@@ -88,7 +88,7 @@ export default function ArticleGalleryPage() {
           ))}
         </select>
         <select
-          className="rounded-xl border border-slate-200 bg-white/85 px-3 py-2 text-sm text-slate-700 focus:outline-none dark:border-slate-700 dark:bg-slate-900/75 dark:text-slate-200"
+          className="bg-white/85 rounded-xl border border-slate-200 px-3 py-2 text-sm text-slate-700 focus:outline-none dark:border-slate-700 dark:bg-slate-900/75 dark:text-slate-200"
           onChange={(event) => setSelectedTag(event.target.value)}
           value={selectedTag}
         >
@@ -114,7 +114,7 @@ export default function ArticleGalleryPage() {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
             {list.map((item) => (
               <Link
-                className="group rounded-2xl border border-slate-200/90 bg-white/85 p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md dark:border-slate-700/70 dark:bg-slate-900/70 dark:hover:border-indigo-400/50"
+                className="bg-white/85 group rounded-2xl border border-slate-200/90 p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md dark:border-slate-700/70 dark:bg-slate-900/70 dark:hover:border-indigo-400/50"
                 key={item.id}
                 to={`/article/${item.id}`}
               >
@@ -141,7 +141,10 @@ export default function ArticleGalleryPage() {
 
                 <div className="mt-4 flex flex-wrap gap-2">
                   {item.tags.map((tag) => (
-                    <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-500 dark:bg-slate-800 dark:text-slate-400" key={tag}>
+                    <span
+                      className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-500 dark:bg-slate-800 dark:text-slate-400"
+                      key={tag}
+                    >
                       #{tag}
                     </span>
                   ))}

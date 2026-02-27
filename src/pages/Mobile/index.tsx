@@ -210,11 +210,7 @@ const MobilePage: React.FC = () => {
                   alt="KeyFlow 英语学习软件热门词库界面 - CET 四六级雅思托福词汇在线练习"
                   className="w-full flex-shrink-0"
                 />
-                <img
-                  src={directoryImg}
-                  alt="KeyFlow 免费英语学习软件词库目录 - 支持程序员技术英语学习"
-                  className="w-full flex-shrink-0"
-                />
+                <img src={directoryImg} alt="KeyFlow 免费英语学习软件词库目录 - 支持程序员技术英语学习" className="w-full flex-shrink-0" />
                 <img src={indexImg} alt="KeyFlow 英语打字练习软件主界面 - 在线英语单词记忆训练" className="w-full flex-shrink-0" />
                 <img
                   src={hotImg}
@@ -812,11 +808,9 @@ const MobilePage: React.FC = () => {
                 <h4 className="mb-3 text-xl font-semibold text-white">技术英语提升</h4>
                 <p className="text-gray-300">专业技术词汇训练，提升阅读文档和交流能力</p>
               </div>
-            
             </div>
 
             <div className="mt-16 text-center">
-            
               <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                 <a
                   href={siteHomeUrl}

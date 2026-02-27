@@ -8,7 +8,12 @@ type TypingPracticePanelProps = {
 
 function toPracticeSegments(paragraphs: string[]) {
   return paragraphs
-    .map((segment) => segment.replace(/[\p{P}\p{S}]/gu, '').replace(/\s+/g, ' ').trim())
+    .map((segment) =>
+      segment
+        .replace(/[\p{P}\p{S}]/gu, '')
+        .replace(/\s+/g, ' ')
+        .trim(),
+    )
     .filter(Boolean)
 }
 
@@ -108,22 +113,25 @@ export default function TypingPracticePanel({ articleId, paragraphs, paragraphsZ
       <span className={customCaretClassName} />
     </span>
   )
-  const focusActiveInput = useCallback((position?: number) => {
-    if (isFinished) {
-      return
-    }
-    const input = activeInputRef.current
-    if (!input) {
-      return
-    }
-    const value = input.value || ''
-    const fallbackPosition = value.length
-    const requestedPosition = position ?? caretPositionRef.current ?? fallbackPosition
-    const nextPosition = Math.max(0, Math.min(requestedPosition, value.length))
-    input.focus()
-    input.setSelectionRange(nextPosition, nextPosition)
-    caretPositionRef.current = nextPosition
-  }, [isFinished])
+  const focusActiveInput = useCallback(
+    (position?: number) => {
+      if (isFinished) {
+        return
+      }
+      const input = activeInputRef.current
+      if (!input) {
+        return
+      }
+      const value = input.value || ''
+      const fallbackPosition = value.length
+      const requestedPosition = position ?? caretPositionRef.current ?? fallbackPosition
+      const nextPosition = Math.max(0, Math.min(requestedPosition, value.length))
+      input.focus()
+      input.setSelectionRange(nextPosition, nextPosition)
+      caretPositionRef.current = nextPosition
+    },
+    [isFinished],
+  )
 
   useEffect(() => {
     if (!startedAt || finishedAt) {
@@ -289,7 +297,7 @@ export default function TypingPracticePanel({ articleId, paragraphs, paragraphsZ
                   isDone
                     ? 'border-emerald-300 bg-emerald-50/50 shadow-sm shadow-emerald-100/60 dark:border-emerald-500/40 dark:bg-emerald-500/10 dark:shadow-none'
                     : isActive
-                    ? 'border-indigo-400 bg-indigo-50/70 shadow-md shadow-indigo-200/70 ring-2 ring-indigo-200/80 dark:border-indigo-400/70 dark:bg-indigo-500/15 dark:shadow-none dark:ring-indigo-500/40'
+                    ? 'dark:bg-indigo-500/15 border-indigo-400 bg-indigo-50/70 shadow-md shadow-indigo-200/70 ring-2 ring-indigo-200/80 dark:border-indigo-400/70 dark:shadow-none dark:ring-indigo-500/40'
                     : 'border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900'
                 }`}
                 onClick={() => {
@@ -330,7 +338,9 @@ export default function TypingPracticePanel({ articleId, paragraphs, paragraphsZ
                               return (
                                 <span className="relative" key={`${index}-char-${charIndex}`}>
                                   {shouldShowCaret && <span className={customCaretClassName} />}
-                                  <span className={isCorrect ? 'text-emerald-600 dark:text-emerald-300' : 'text-red-600 dark:text-red-300'}>{char}</span>
+                                  <span className={isCorrect ? 'text-emerald-600 dark:text-emerald-300' : 'text-red-600 dark:text-red-300'}>
+                                    {char}
+                                  </span>
                                 </span>
                               )
                             })}
@@ -346,7 +356,7 @@ export default function TypingPracticePanel({ articleId, paragraphs, paragraphsZ
                       autoCapitalize="off"
                       autoComplete="off"
                       autoCorrect="off"
-                      className={`absolute inset-0 h-full w-full resize-none overflow-hidden border-none bg-transparent p-0 text-transparent caret-transparent outline-none ring-0 shadow-none appearance-none focus:border-none focus:outline-none focus:ring-0 focus:shadow-none focus-visible:outline-none focus-visible:ring-0 [box-shadow:none] [-webkit-appearance:none] [-webkit-tap-highlight-color:transparent] ${typingTextClassName}`}
+                      className={`absolute inset-0 h-full w-full resize-none appearance-none overflow-hidden border-none bg-transparent p-0 text-transparent caret-transparent shadow-none outline-none ring-0 [-webkit-appearance:none] [-webkit-tap-highlight-color:transparent] [box-shadow:none] focus:border-none focus:shadow-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 ${typingTextClassName}`}
                       onChange={(event) => handleInputChange(index, event.target.value)}
                       onKeyDown={(event) => {
                         if (event.key === 'Enter') {
@@ -366,7 +376,9 @@ export default function TypingPracticePanel({ articleId, paragraphs, paragraphsZ
                 </div>
               </div>
 
-              {paragraphsZh?.[index] && <p className="px-1 text-base leading-8 text-slate-500 dark:text-slate-400">{paragraphsZh[index]}</p>}
+              {paragraphsZh?.[index] && (
+                <p className="px-1 text-base leading-8 text-slate-500 dark:text-slate-400">{paragraphsZh[index]}</p>
+              )}
             </div>
           )
         })}

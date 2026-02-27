@@ -49,7 +49,7 @@ export default function ArticlePage() {
         </div>
         <div className="flex items-center gap-2">
           <button
-            className="inline-flex items-center gap-1 rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-700 dark:border-emerald-500/40 dark:bg-emerald-500/15 dark:text-emerald-200"
+            className="dark:bg-emerald-500/15 inline-flex items-center gap-1 rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-700 dark:border-emerald-500/40 dark:text-emerald-200"
             onClick={() => setIsTypingPracticeOpen((prev) => !prev)}
             type="button"
           >
@@ -57,7 +57,7 @@ export default function ArticlePage() {
             {isTypingPracticeOpen ? '收起练习' : '开始打字练习'}
           </button>
           <Link
-            className="inline-flex items-center gap-1 rounded-xl border border-indigo-200 bg-indigo-50 px-3 py-2 text-sm text-indigo-700 dark:border-indigo-500/40 dark:bg-indigo-500/15 dark:text-indigo-200"
+            className="dark:bg-indigo-500/15 inline-flex items-center gap-1 rounded-xl border border-indigo-200 bg-indigo-50 px-3 py-2 text-sm text-indigo-700 dark:border-indigo-500/40 dark:text-indigo-200"
             to="/article-gallery"
           >
             前往文章库
@@ -67,7 +67,7 @@ export default function ArticlePage() {
       </div>
 
       <div className="min-h-0 flex-1">
-        <article className="h-full overflow-y-auto rounded-2xl border border-slate-200/90 bg-white/88 p-6 shadow-sm dark:border-slate-700/70 dark:bg-slate-900/70">
+        <article className="bg-white/88 h-full overflow-y-auto rounded-2xl border border-slate-200/90 p-6 shadow-sm dark:border-slate-700/70 dark:bg-slate-900/70">
           <div className="mb-4 flex flex-wrap items-center gap-2">
             <span className="rounded-full bg-indigo-50 px-2 py-1 text-[11px] font-semibold text-indigo-700 dark:bg-indigo-500/20 dark:text-indigo-200">
               {getArticleLevelLabel(currentArticle.level)}
@@ -81,18 +81,27 @@ export default function ArticlePage() {
           </div>
 
           <h2 className="text-3xl font-extrabold leading-tight text-slate-900 dark:text-slate-100">{currentArticle.title}</h2>
-          {currentArticle.titleZh && <p className="mt-2 text-lg font-semibold text-slate-700 dark:text-slate-200">{currentArticle.titleZh}</p>}
+          {currentArticle.titleZh && (
+            <p className="mt-2 text-lg font-semibold text-slate-700 dark:text-slate-200">{currentArticle.titleZh}</p>
+          )}
 
           <div className="mt-6 flex flex-wrap gap-2">
             {currentArticle.tags.map((tag) => (
-              <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-300" key={tag}>
+              <span
+                className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-300"
+                key={tag}
+              >
                 #{tag}
               </span>
             ))}
           </div>
 
           {isTypingPracticeOpen ? (
-            <TypingPracticePanel articleId={currentArticle.id} paragraphs={currentArticle.paragraphs} paragraphsZh={currentArticle.paragraphsZh} />
+            <TypingPracticePanel
+              articleId={currentArticle.id}
+              paragraphs={currentArticle.paragraphs}
+              paragraphsZh={currentArticle.paragraphsZh}
+            />
           ) : (
             <div className="mt-8 space-y-6 text-[18px] leading-9 text-slate-700 dark:text-slate-300">
               {currentArticle.paragraphs.map((paragraph, index) => (

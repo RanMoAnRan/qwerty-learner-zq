@@ -72,9 +72,7 @@ export default function GalleryPage() {
             <div className="mx-1 mt-16 rounded-2xl border border-slate-200/80 bg-white/70 px-4 py-3 text-xs text-slate-500 dark:border-slate-700/70 dark:bg-slate-900/60 dark:text-slate-400">
               <div className="flex items-start gap-2">
                 <IconInfo className="mt-0.5 h-4 w-4 shrink-0" />
-                <p>
-                  本项目的词典数据来自多个开源项目以及社区贡献者，仅供学习研究使用。若涉及版权问题，请通过网站邮箱联系处理。
-                </p>
+                <p>本项目的词典数据来自多个开源项目以及社区贡献者，仅供学习研究使用。若涉及版权问题，请通过网站邮箱联系处理。</p>
               </div>
             </div>
           </ScrollArea.Viewport>

@@ -31,7 +31,13 @@ const PronunciationSwitcher = () => {
         name: defaultPron.name,
       }))
     }
-  }, [currentDictInfo.defaultPronIndex, setPronunciationConfig, pronunciationList, pronunciationConfig.type, languagePronConfig.defaultPronIndex])
+  }, [
+    currentDictInfo.defaultPronIndex,
+    setPronunciationConfig,
+    pronunciationList,
+    pronunciationConfig.type,
+    languagePronConfig.defaultPronIndex,
+  ])
 
   useEffect(() => {
     const phoneticType = PRONUNCIATION_PHONETIC_MAP[pronunciationConfig.type]

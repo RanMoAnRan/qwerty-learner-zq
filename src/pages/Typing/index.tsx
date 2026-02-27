@@ -137,7 +137,9 @@ const App: React.FC = () => {
           <StartButton isLoading={isLoading} />
           <Tooltip content="跳过该词">
             <button
-              className={`${state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'} my-btn-primary transition-all duration-300 `}
+              className={`${
+                state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
+              } my-btn-primary transition-all duration-300 `}
               onClick={skipWord}
             >
               Skip

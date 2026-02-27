@@ -58,14 +58,20 @@ export default function ShareLandingPage() {
 
       <section className="mt-6 rounded-xl border border-slate-200 p-4">
         <p className="text-sm text-slate-700">{message}</p>
-        <Button className="mt-4" onClick={onRedeem}>Redeem</Button>
+        <Button className="mt-4" onClick={onRedeem}>
+          Redeem
+        </Button>
       </section>
 
       <div className="mt-6 text-sm">
         {!session ? (
-          <Link className="text-indigo-600" to="/login">Go login</Link>
+          <Link className="text-indigo-600" to="/login">
+            Go login
+          </Link>
         ) : (
-          <Link className="text-indigo-600" to="/go-premium">Check premium status</Link>
+          <Link className="text-indigo-600" to="/go-premium">
+            Check premium status
+          </Link>
         )}
       </div>
     </main>

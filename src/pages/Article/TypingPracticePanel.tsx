@@ -1,3 +1,4 @@
+import useKeySounds from '@/hooks/useKeySounds'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 type TypingPracticePanelProps = {
@@ -83,6 +84,7 @@ function applyAutoSpaces(target: string, input: string) {
 
 export default function TypingPracticePanel({ articleId, paragraphs, paragraphsZh }: TypingPracticePanelProps) {
   const segments = useMemo(() => toPracticeSegments(paragraphs), [paragraphs])
+  const [playKeySound, playWrongSound, playHintSound] = useKeySounds()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [inputValues, setInputValues] = useState<string[]>([])
   const [startedAt, setStartedAt] = useState<number | null>(null)
@@ -232,11 +234,39 @@ export default function TypingPracticePanel({ articleId, paragraphs, paragraphsZ
 
     const normalizedWithinSegment = nextNormalizedValue.slice(0, segment.length)
     const reachedCurrentSegment = isSegmentReached(segment, normalizedWithinSegment)
+    const nextStoredValue = reachedCurrentSegment ? normalizedWithinSegment : nextNormalizedValue
+
+    if (!isDeleting && nextStoredValue.length > currentValue.length) {
+      let hasWrong = false
+      let hasCorrect = false
+
+      for (let cursor = currentValue.length; cursor < nextStoredValue.length; cursor += 1) {
+        if (!segment[cursor]) {
+          break
+        }
+        if (isSameIgnoreCase(segment[cursor], nextStoredValue[cursor])) {
+          hasCorrect = true
+        } else {
+          hasWrong = true
+        }
+      }
+
+      if (hasWrong) {
+        playWrongSound()
+      } else if (hasCorrect) {
+        if (reachedCurrentSegment && isSegmentCompleted(segment, nextStoredValue)) {
+          playHintSound()
+        } else {
+          playKeySound()
+        }
+      }
+    }
+
     caretPositionRef.current = Math.min(normalizedWithinSegment.length, segment.length)
 
     setInputValues((prev) => {
       const next = [...prev]
-      next[index] = reachedCurrentSegment ? normalizedWithinSegment : nextNormalizedValue
+      next[index] = nextStoredValue
       return next
     })
 
